@@ -13,13 +13,13 @@ import {
 } from "@/components/ui/Dropdown-menu"
 import { useState } from "react"
 
-export default function Header() {
+const Header = () => {
   const { t, language, setLanguage } = useLanguage()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+    <header className="sticky top-0 z-50 w-full bg-white">
+      <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.svg" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
@@ -67,7 +67,7 @@ export default function Header() {
           </Link>
 
           <Link href="/get-started">
-            <Button className="bg-cyan-400 hover:bg-cyan-500 text-white">{t("nav.get-started")}</Button>
+            <Button className="bg-primary hover:bg-cyan-500 text-white">{t("nav.get-started")}</Button>
           </Link>
         </div>
 
@@ -149,4 +149,6 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header;
 

@@ -28,10 +28,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LanguageProvider>
-          <div className="flex min-h-screen flex-col">
+          <div className="">
             <Header />
             <main className="flex-1">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </LanguageProvider>
       </body>
