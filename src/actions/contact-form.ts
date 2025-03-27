@@ -49,7 +49,15 @@ export async function submitContactForm(formData: ContactFormData) {
     const sheet = doc.sheetsByIndex[0];
 
     // Construir el objeto con la nueva fila a agregar
-    const newRow: Record<string, any> = {
+    const newRow: {
+      Fecha: string;
+      Nombre: string;
+      Apellido: string;
+      Email: string;
+      Empresa: string;
+      Teléfono: string;
+      Mensaje: string;
+    } = {
       Fecha: new Date().toISOString(),
       Nombre: formData.firstName,
       Apellido: formData.lastName,
@@ -67,6 +75,7 @@ export async function submitContactForm(formData: ContactFormData) {
     await sheet.addRow(newRow);
 
     return { success: true };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Error al enviar a Google Sheets:", error);
     return {
