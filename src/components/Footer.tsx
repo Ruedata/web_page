@@ -13,11 +13,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/logo-white.svg" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
+              <Image src="/images/logo-white.png" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
             </Link>
-            <p className="text-sm text-gray-300">AI-powered tire management solutions for transportation fleets.</p>
+            <p className="text-sm text-gray-300">{t('footer.aipower')}</p>
           </div>
-          <div>
+          {/* <div>
             <h3 className="mb-4 text-lg font-medium">Solutions</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -36,8 +36,8 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <h3 className="mb-4 text-lg font-medium">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -56,17 +56,12 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h3 className="mb-4 text-lg font-medium">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-300">+1 334-373-2288</li>
               <li className="text-gray-300">info@ruedata.com</li>
-              <li className="text-gray-300">
-                123 Main Street, Suite 100
-                <br />
-                City, State 12345
-              </li>
             </ul>
           </div>
         </div>
@@ -74,14 +69,14 @@ export default function Footer() {
           <p className="text-sm text-gray-300">
             &copy; {new Date().getFullYear()} Ruedata. {t("footer.rights")}
           </p>
-          <div className="flex gap-4 mt-4 md:mt-0">
+          {/* <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm text-gray-300 hover:text-white">
               {t("footer.privacy")}
             </Link>
             <Link href="/terms" className="text-sm text-gray-300 hover:text-white">
               {t("footer.terms")}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

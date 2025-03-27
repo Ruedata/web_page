@@ -24,18 +24,40 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Ruedata",
+    url: "https://ruedata.com",
+    description: metadata.description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://ruedata.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  }
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <link rel="alternate" hrefLang="en" href="https://ruedata.com/" />
+        <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
+        <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
+        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com" />
+      </head>
       <body className={inter.className}>
         <LanguageProvider>
           <div className="">
             <Header />
             <main className="flex-1">{children}</main>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </LanguageProvider>
       </body>
     </html>
   )
 }
-

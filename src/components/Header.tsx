@@ -18,28 +18,13 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white">
+    <header className="sticky top-0 z-50 w-full bg-white px-4">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.svg" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
           </Link>
         </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
-          <div className="flex items-center gap-6">
-            <Link href="/solutions" className="text-navy-blue hover:text-blue-700 font-medium">
-              {t("nav.solutions")}
-            </Link>
-            <Link href="/about" className="text-navy-blue hover:text-blue-700 font-medium">
-              {t("nav.about")}
-            </Link>
-            <Link href="/case-studies" className="text-navy-blue hover:text-blue-700 font-medium">
-              {t("nav.case-studies")}
-            </Link>
-          </div>
-        </nav>
 
         <div className="hidden md:flex items-center gap-4">
           <div className="flex items-center gap-2">
@@ -53,21 +38,21 @@ const Header = () => {
                 {language.toUpperCase()}
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="end" className="bg-white">
               <DropdownMenuItem onClick={() => setLanguage("en")}>English</DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLanguage("es")}>Español</DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLanguage("pt")}>Português</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/login">
+          <Link href="https://app.ruedata.com/">
             <Button variant="outline" className="text-navy-blue border-navy-blue">
               {t("nav.login")}
             </Button>
           </Link>
 
           <Link href="/get-started">
-            <Button className="bg-primary hover:bg-cyan-500 text-white">{t("nav.get-started")}</Button>
+            <Button className="primary text-white">{t("nav.get-started")}</Button>
           </Link>
         </div>
 
@@ -94,7 +79,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white p-4 border-t">
           <nav className="flex flex-col space-y-4">
-            <Link href="/solutions" className="text-navy-blue hover:text-blue-700 font-medium">
+            {/* <Link href="/solutions" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.solutions")}
             </Link>
             <Link href="/about" className="text-navy-blue hover:text-blue-700 font-medium">
@@ -102,7 +87,7 @@ const Header = () => {
             </Link>
             <Link href="/case-studies" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.case-studies")}
-            </Link>
+            </Link> */}
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-navy-blue" />
               <span className="text-sm text-navy-blue">+1 334-373-2288</span>
@@ -134,11 +119,11 @@ const Header = () => {
               </Button>
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="/login" className="w-full">
+                <Link href="https://app.ruedata.com/" className="w-full">
                 <Button variant="outline" className="text-navy-blue border-navy-blue w-full">
                   {t("nav.login")}
                 </Button>
-              </Link>
+                </Link>
               <Link href="/get-started" className="w-full">
                 <Button className="bg-cyan-400 hover:bg-cyan-500 text-white w-full">{t("nav.get-started")}</Button>
               </Link>
