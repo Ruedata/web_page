@@ -46,7 +46,7 @@ export default function Home() {
      {/* Solution Section */}
       <section className="w-full mt-16">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-navy-blue mb-8">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-navy-blue mb-8">
             {t("features.title")}
           </h2>
           <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center px-4">
@@ -61,12 +61,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-8 md:gap-4 lg:gap-8 justify-between items-center">
 
             {/* Image 1 */}
-            <div className="w-full md:w-1/3 max-w-[400px] relative group">
+            <div className="w-full md:w-1/3 sm:max-w-[400px] relative group h-[300px] sm:h-[600px]">
               <Image
               src="/images/maintenance.jpg"
               alt="maintenance team"
-              width={400}
-              height={300}
+              fill
               className="rounded-lg object-cover w-full h-auto"
               />
                 <div className="absolute inset-0 bg-black/[.06] text-white p-4 rounded-lg flex flex-col justify-end">
@@ -80,12 +79,11 @@ export default function Home() {
             </div>
 
             {/* Image 2 */}
-            <div className="w-full md:w-1/3 max-w-[400px] md:mt-32 relative group">
+            <div className="w-full md:w-1/3 md:mt-32 sm:max-w-[400px] relative group h-[300px] sm:h-[600px]">
               <Image
                 src="/images/procurement.jpg"
                 alt="procurement"
-                width={400}
-                height={300}
+                fill
                 className="rounded-lg object-cover w-full h-auto"
               />
               <div className="absolute inset-0 bg-black/[.06] text-white p-4 rounded-lg flex flex-col justify-end group">
@@ -102,7 +100,7 @@ export default function Home() {
             </div>
 
             {/* Image 3 */}
-            <div className="w-full md:w-1/3 max-w-[400px] relative group h-[600px]">
+            <div className="w-full md:w-1/3 sm:max-w-[400px] relative group h-[300px] sm:h-[600px]">
               <Image
                 src="/images/fleet_manager.jpg"
                 alt="fleet manager"
@@ -127,7 +125,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-16">
         <div className="container mx-auto">
             <div className="flex flex-col items-center overflow-hidden">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-navy-blue mb-8">
+            <h2 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-navy-blue mb-8">
               {t("trustedBy.title")}
             </h2>
               <CarouselLogos
@@ -136,27 +134,28 @@ export default function Home() {
             </div>
         </div>
       </section>
+
       {/* Features section */}
-      <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1 gap-16 mt-4">
+      <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h3 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('features.smarterTitle')}</h3>
-          <p className="text-gray-600 text-lg/relaxed lg:text-xl/relaxed mb-4 lg:mb-8">{t('features.smarterParagraph')}</p>
+          <h2 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-center text-navy-blue mb-2 lg:mb-4">{t('features.smarterTitle')}</h2>
+          <p className="max-w-[600px] mx-auto text-center text-gray-600 text-lg/relaxed lg:text-xl/relaxed mb-4 lg:mb-8">{t('features.smarterParagraph')}</p>
         </div>
+        {features.map((item, index: number) => (
+          <LeftRightSection
+            key={index}
+            title={item.title}
+            subtitle={item.subtitle}
+            ul={item.ul}
+            left={!(index%2)}
+            image={item.image}
+          />
+        ))}
       </section>
-      {features.map((item, index: number) => (
-        <LeftRightSection
-          key={index}
-          title={item.title}
-          subtitle={item.subtitle}
-          ul={item.ul}
-          left={!(index%2)}
-          image={item.image}
-        />
-      ))}
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h3 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('partners.title')}</h3>
+          <h2 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('partners.title')}</h2>
         </div>
         <LogoPartners
           images={partnersImages}
@@ -166,7 +165,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-16 bg-gray-100">
         <div className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
           <div>
-            <h3 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('case.studies')}</h3>
+            <h2 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-2 lg:mb-4">{t('case.studies')}</h2>
           </div>
         <Carousel items={carouselItems} autoPlay={false} />
         </div>
@@ -174,7 +173,7 @@ export default function Home() {
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h3 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('backedBy.title')}</h3>
+          <h3 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-2 lg:mb-4">{t('backedBy.title')}</h3>
         </div>
         <LogoPartners
           images={backedByImages}

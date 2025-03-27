@@ -24,7 +24,7 @@ const LeftRightSection = ({ title, subtitle, ul, image, left=false }: LeftRightS
           }
         </ul>
       </div>
-      <div className={`relative h-[400px] ${left ? "order-2 lg:order-1" : ""}`}>
+      <div className={`relative h-[300px] sm:h-[400px] ${left ? "order-2 lg:order-1" : ""}`}>
         <Image
           src={image}
           alt="Tire management with AI visualization"

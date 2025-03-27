@@ -61,7 +61,7 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-medium">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-gray-300">+1 334-373-2288</li>
-              <li className="text-gray-300">info@ruedata.com</li>
+              <li className="text-gray-300">hello@ruedata.com</li>
             </ul>
           </div>
         </div>

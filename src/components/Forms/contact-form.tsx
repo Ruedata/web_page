@@ -119,7 +119,7 @@ export default function ContactForm() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="company">{t('company')}</Label>
+                <Label htmlFor="company">{t('form.company')}</Label>
                 <Input
                   id="company"
                   name="company"
