@@ -97,7 +97,7 @@ export default function Carousel({ items, autoPlay = true, interval = 5000 }: Ca
       {/* Navigation buttons */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 shadow-md hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary"
+        className="absolute cursor-pointer left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 shadow-md hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary"
         aria-label={
           language === "en" ? "Previous slide" : language === "es" ? "Diapositiva anterior" : "Slide anterior"
         }
@@ -107,7 +107,7 @@ export default function Carousel({ items, autoPlay = true, interval = 5000 }: Ca
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 shadow-md hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary"
+        className="absolute cursor-pointer right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 shadow-md hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary"
         aria-label={language === "en" ? "Next slide" : language === "es" ? "Siguiente diapositiva" : "Próximo slide"}
       >
         <ChevronRight className="h-6 w-6" />
@@ -120,7 +120,7 @@ export default function Carousel({ items, autoPlay = true, interval = 5000 }: Ca
             key={index}
             onClick={() => goToSlide(index)}
             className={cn(
-              "h-3 w-3 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-primary",
+              "h-3 w-3 rounded-full cursor-pointer transition-all focus:outline-none focus:ring-2 focus:ring-primary",
               currentIndex === index ? "bg-primary" : "bg-gray-300 hover:bg-gray-400",
             )}
             aria-label={

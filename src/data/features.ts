@@ -62,6 +62,8 @@ export const features = [
     subtitle: 'features.p6',
     ul: [],
     image: '/images/manager.jpg',
+    button: true,
+    link: '/get-started',
   },
 ];
 

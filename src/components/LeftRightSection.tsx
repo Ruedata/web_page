@@ -1,14 +1,18 @@
 import Image from "next/image";
 import { useLanguage } from "@/components/Language-provider";
+import Link from "next/link";
+import { Button } from "./ui/Button";
 interface LeftRightSectionProps {
   title: string;
   subtitle: string;
   ul: string[];
   image: string;
   left?: boolean;
+  button?: boolean;
+  link?: string;
 }
 
-const LeftRightSection = ({ title, subtitle, ul, image, left=false }: LeftRightSectionProps) => {
+const LeftRightSection = ({ title, subtitle, ul, image, left=false, button=false, link }: LeftRightSectionProps) => {
   const { t } = useLanguage();
 
   return (
@@ -23,6 +27,11 @@ const LeftRightSection = ({ title, subtitle, ul, image, left=false }: LeftRightS
             ))
           }
         </ul>
+        {button && link && (
+          <Link href={link}>
+            <Button className="bg-primary text-white mb-8 lg:mb-8">{t("nav.get-started")}</Button>
+          </Link>
+        )}
       </div>
       <div className={`relative h-[300px] sm:h-[400px] ${left ? "order-2 lg:order-1" : ""}`}>
         <Image

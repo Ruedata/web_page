@@ -149,13 +149,15 @@ export default function Home() {
             ul={item.ul}
             left={!(index%2)}
             image={item.image}
+            button={item.button}
+            link={item.link}
           />
         ))}
       </section>
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h2 className="text-2xl lg:text-4xl font-bold text-navy-blue mb-2 lg:mb-4">{t('partners.title')}</h2>
+          <h2 className="text-2xl text-center lg:text-4xl font-bold text-navy-blue mb-4 lg:mb-8">{t('partners.title')}</h2>
         </div>
         <LogoPartners
           images={partnersImages}
@@ -165,7 +167,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-16 bg-gray-100">
         <div className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
           <div>
-            <h2 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-2 lg:mb-4">{t('case.studies')}</h2>
+            <h2 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-8">{t('case.studies')}</h2>
           </div>
         <Carousel items={carouselItems} autoPlay={false} />
         </div>
@@ -173,7 +175,7 @@ export default function Home() {
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h3 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-2 lg:mb-4">{t('backedBy.title')}</h3>
+          <h3 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-8">{t('backedBy.title')}</h3>
         </div>
         <LogoPartners
           images={backedByImages}
