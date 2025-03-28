@@ -15,8 +15,6 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-// Dictionary of translations
-
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
@@ -26,6 +24,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const browserLang = navigator.language.split("-")[0] as Language
     if (["en", "es", "pt"].includes(browserLang)) {
       setLanguage(browserLang)
+    } else {
+      setLanguage("en") // Default to English if the language is not supported
     }
   }, [])
 
