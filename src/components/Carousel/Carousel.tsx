@@ -62,7 +62,7 @@ export default function Carousel({ items, autoPlay = true, interval = 5000 }: Ca
   if (!items.length) return null
 
   return (
-    <div className="relative w-full overflow-hidden rounded-lg">
+    <div className="relative w-full overflow-hidden">
       {/* Carousel content */}
       <div
         className="flex h-full w-full transition-transform duration-500 ease-out"
@@ -80,13 +80,13 @@ export default function Carousel({ items, autoPlay = true, interval = 5000 }: Ca
                 src={item.image || "/placeholder.svg"}
                 alt={t(item.title)}
                 fill
-                className="rounded-2xl object-cover"
+                className="rounded-l-xl object-cover"
                 priority={index === 0}
               />
             </div>
 
             {/* Content section (right) */}
-            <div className="flex w-full flex-col justify-center space-y-4 bg-white p-6 md:w-1/2">
+            <div className="flex w-full flex-col justify-center space-y-4 bg-white p-12 md:w-1/2 rounded-r -xl">
               <h3 className="text-2xl text-navy-blue font-bold text-gray-900 md:text-3xl">{t(item.title)}</h3>
               <p className="max-w-[500px] text-gray-600">{t(item.description)}</p>
             </div>

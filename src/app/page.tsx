@@ -136,8 +136,8 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
-        <div>
+      <section>
+        <div className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
           <h2 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-center text-navy-blue mb-2 lg:mb-4">{t('features.smarterTitle')}</h2>
           <p className="max-w-[600px] mx-auto text-center text-gray-600 text-lg/relaxed lg:text-xl/relaxed mb-4 lg:mb-8">{t('features.smarterParagraph')}</p>
         </div>
@@ -164,7 +164,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="w-full py-12 md:py-16 bg-gray-100">
+      <section className="w-full py-12 md:py-16 bg-gray-200">
         <div className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
           <div>
             <h2 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-8">{t('case.studies')}</h2>
