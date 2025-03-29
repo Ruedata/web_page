@@ -57,7 +57,7 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="en" href="https://ruedata.com/" />
         <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
         <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
-        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com/" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
