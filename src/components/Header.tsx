@@ -21,7 +21,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-white px-4">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={language === "en" ? "/" : `/${language}/`} className="flex items-center gap-2">
             <Image src="/logo.svg" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
           </Link>
         </div>
@@ -51,7 +51,7 @@ const Header = () => {
             </Button>
           </Link>
 
-          <Link href="/get-started/">
+          <Link href={language === "en" ? "/get-started/" : `/${language}/get-started/`}>
             <Button className="primary text-white">{t("nav.get-started")}</Button>
           </Link>
         </div>
@@ -124,7 +124,7 @@ const Header = () => {
                   {t("nav.login")}
                 </Button>
                 </Link>
-              <Link href="/get-started/" className="w-full">
+              <Link href={language === "en" ? "/get-started/" : `/${language}/get-started/`} className="w-full">
                 <Button className="bg-cyan-400 hover:bg-cyan-500 text-white w-full">{t("nav.get-started")}</Button>
               </Link>
             </div>

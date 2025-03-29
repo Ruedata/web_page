@@ -26,6 +26,19 @@ const ensureTrailingSlash = (path: string): string => {
   return path.endsWith('/') ? path : `${path}/`
 }
 
+const getLocaleFromPath = (path: string): Language | null => {
+  if (path === '/' || path.startsWith('/?')) return 'en'
+  
+  const segments = path.split('/').filter(Boolean)
+  if (segments.length > 0) {
+    const firstSegment = segments[0]
+    if (firstSegment === 'es' || firstSegment === 'pt') {
+      return firstSegment as Language
+    }
+  }
+  return null
+}
+
 const isLanguageRootPath = (path: string): boolean => {
   const normalizedPath = path.endsWith('/') ? path : `${path}/`
   return normalizedPath === '/' || 
@@ -53,14 +66,22 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (isClient) {
       const currentPath = window.location.pathname
-      const pathWithTrailingSlash = ensureTrailingSlash(currentPath)
+      console.log("Current path:", currentPath)
+      console.log("Path ends with slash:", currentPath.endsWith('/'))
+      
+      if (currentPath !== '/' && !currentPath.endsWith('/')) {
+        console.log("Redirecting to:", `${currentPath}/`)
+        window.location.href = `${currentPath}/`
+        return
+      }
       
       const savedLanguage = localStorage.getItem("preferredLanguage") as Language | null
       
       if (savedLanguage && ["en", "es", "pt"].includes(savedLanguage)) {
         const expectedPath = LANGUAGE_PATHS[savedLanguage]
+        const currentLocale = getLocaleFromPath(currentPath)
         
-        if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
+        if (isLanguageRootPath(currentPath) && currentLocale !== savedLanguage) {
           window.location.href = expectedPath
         }
       } else {
@@ -71,15 +92,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
           localStorage.setItem("preferredLanguage", browserLang)
           
           const expectedPath = LANGUAGE_PATHS[browserLang]
+          const currentLocale = getLocaleFromPath(currentPath)
           
-          if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
+          if (isLanguageRootPath(currentPath) && currentLocale !== browserLang) {
             window.location.href = expectedPath
           }
         } else {
           setLanguage("en")
           localStorage.setItem("preferredLanguage", "en")
           
-          if (pathWithTrailingSlash === '/es/' || pathWithTrailingSlash === '/pt/') {
+          if (currentPath.startsWith('/es') || currentPath.startsWith('/pt')) {
             window.location.href = "/"
           }
         }
@@ -93,12 +115,26 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       localStorage.setItem("preferredLanguage", lang)
       
       const currentPath = window.location.pathname
-      const pathWithTrailingSlash = ensureTrailingSlash(currentPath)
+      const currentLocale = getLocaleFromPath(currentPath)
       
-      const expectedPath = LANGUAGE_PATHS[lang]
+      if (isLanguageRootPath(currentPath)) {
+        window.location.href = LANGUAGE_PATHS[lang]
+        return
+      }
       
-      if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
-        window.location.href = expectedPath
+      if (currentLocale) {
+        const pathWithoutLocale = currentPath.replace(new RegExp(`^/${currentLocale}`), '')
+        
+        if (lang === 'en') {
+          window.location.href = pathWithoutLocale || '/'
+        } else {
+          window.location.href = `/${lang}${pathWithoutLocale}`
+        }
+        return
+      }
+      
+      if (lang !== 'en') {
+        window.location.href = `/${lang}${currentPath}`
       }
     }
   }
