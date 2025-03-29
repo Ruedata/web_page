@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import type { Viewport } from "next"
 
-const inter = Inter({ subsets: ["latin"] })
+const _ = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Ruedata - Tire Management with AI",

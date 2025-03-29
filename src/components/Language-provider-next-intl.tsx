@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useCallback } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 
@@ -14,7 +14,7 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const LANGUAGE_PATHS: Record<Language, string> = {
+const _LANGUAGE_PATHS: Record<Language, string> = {
   en: "/",
   es: "/es",
   pt: "/pt",
@@ -50,9 +50,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   
   const translateKey = (key: string): string => {
     try {
-      const keys = key.split('.');
+      key.split('.');
       return t(key);
-    } catch (error) {
+    } catch (_) {
       console.error(`Translation key not found: ${key}`);
       return key;
     }
