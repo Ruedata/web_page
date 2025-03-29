@@ -5,7 +5,8 @@ import Link from 'next/link';
 export { Link, useRouter, usePathname, useLocale, useTranslations };
 
 export function redirect(path: string) {
-  const router = useRouter();
-  router.push(path);
+  if (typeof window !== 'undefined') {
+    window.location.href = path;
+  }
   return null;
 }
