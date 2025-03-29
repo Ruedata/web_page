@@ -21,6 +21,17 @@ const LANGUAGE_PATHS: Record<Language, string> = {
   pt: "/pt/",
 }
 
+const normalizePath = (path: string): string => {
+  return path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path
+}
+
+const isLanguageRootPath = (path: string): boolean => {
+  const normalizedPath = normalizePath(path)
+  return normalizedPath === '/' || 
+         normalizedPath === '/es' || 
+         normalizedPath === '/pt'
+}
+
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("en")
   const [isClient, setIsClient] = useState(false)
@@ -98,13 +109,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       localStorage.setItem("preferredLanguage", lang)
       
       const currentPath = window.location.pathname
-      const expectedPath = LANGUAGE_PATHS[lang]
+      const normalizedPath = normalizePath(currentPath)
       
-      if (
-        (currentPath === "/" || currentPath === "/es" || currentPath === "/pt" || 
-         currentPath.startsWith("/es/") || currentPath.startsWith("/pt/")) &&
-        !currentPath.startsWith(expectedPath)
-      ) {
+      const expectedPath = LANGUAGE_PATHS[lang]
+      const normalizedExpectedPath = normalizePath(expectedPath)
+      
+      if (isLanguageRootPath(currentPath) && normalizedPath !== normalizedExpectedPath) {
         window.location.href = expectedPath
       }
     }
