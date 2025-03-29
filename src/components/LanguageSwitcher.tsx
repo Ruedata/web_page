@@ -1,12 +1,12 @@
 "use client"
 
-import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { setCookie } from 'cookies-next';
-import { locales } from '@/i18n';
+
+import { useTranslations } from 'next-intl';
 
 export default function LanguageSwitcher() {
-  const t = useTranslations();
+  const _ = useTranslations();
   const [selectedLocale, setSelectedLocale] = useState('en');
 
   useEffect(() => {

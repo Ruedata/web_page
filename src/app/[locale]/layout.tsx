@@ -39,7 +39,7 @@ export default async function LocaleLayout({
   let messages;
   try {
     messages = await getMessages(locale);
-  } catch (error) {
+  } catch (_) {
     notFound();
   }
   
