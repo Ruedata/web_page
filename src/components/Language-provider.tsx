@@ -17,8 +17,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const LANGUAGE_PATHS: Record<Language, string> = {
   en: "/",
-  es: "/es",
-  pt: "/pt",
+  es: "/es/",
+  pt: "/pt/",
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
