@@ -42,16 +42,23 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     if (isClient) {
       const currentPath = window.location.pathname
       
+      const normalizedPath = currentPath.endsWith('/') && currentPath !== '/' 
+        ? currentPath.slice(0, -1) 
+        : currentPath
+      
       const savedLanguage = localStorage.getItem("preferredLanguage") as Language | null
       
       if (savedLanguage && ["en", "es", "pt"].includes(savedLanguage)) {
         const expectedPath = LANGUAGE_PATHS[savedLanguage]
+        const normalizedExpectedPath = expectedPath.endsWith('/') && expectedPath !== '/' 
+          ? expectedPath.slice(0, -1) 
+          : expectedPath
         
-        if (
-          (currentPath === "/" || currentPath === "/es" || currentPath === "/pt" || 
-           currentPath.startsWith("/es/") || currentPath.startsWith("/pt/")) &&
-          !currentPath.startsWith(expectedPath)
-        ) {
+        const isOnLanguagePath = normalizedPath === '/' || 
+                                normalizedPath === '/es' || 
+                                normalizedPath === '/pt'
+        
+        if (isOnLanguagePath && normalizedPath !== normalizedExpectedPath) {
           window.location.href = expectedPath
         }
       } else {
@@ -62,20 +69,22 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
           localStorage.setItem("preferredLanguage", browserLang)
           
           const expectedPath = LANGUAGE_PATHS[browserLang]
+          const normalizedExpectedPath = expectedPath.endsWith('/') && expectedPath !== '/' 
+            ? expectedPath.slice(0, -1) 
+            : expectedPath
           
-          if (
-            (currentPath === "/" || currentPath === "/es" || currentPath === "/pt" || 
-             currentPath.startsWith("/es/") || currentPath.startsWith("/pt/")) &&
-            !currentPath.startsWith(expectedPath)
-          ) {
+          const isOnLanguagePath = normalizedPath === '/' || 
+                                  normalizedPath === '/es' || 
+                                  normalizedPath === '/pt'
+          
+          if (isOnLanguagePath && normalizedPath !== normalizedExpectedPath) {
             window.location.href = expectedPath
           }
         } else {
           setLanguage("en")
           localStorage.setItem("preferredLanguage", "en")
           
-          if (currentPath === "/es" || currentPath === "/pt" || 
-              currentPath.startsWith("/es/") || currentPath.startsWith("/pt/")) {
+          if (normalizedPath === '/es' || normalizedPath === '/pt') {
             window.location.href = "/"
           }
         }
