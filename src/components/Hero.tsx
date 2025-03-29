@@ -16,7 +16,7 @@ const Hero  = ({title, subtitle, image}: HeroProps) => {
       <div className="flex justify-center flex-col">
         <h1 className="text-2xl sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-2 lg:mb-8 self-start">{t(title)}</h1>
         <p className="max-w-[600px] text-gray-600 text-lg/relaxed lg:text-xl/relaxed mb-4 lg:mb-8">{t(subtitle)}</p>
-        <Link href="/get-started">
+        <Link href="/get-started/">
           <Button className="bg-navy-blue hover:bg-cyan-500 text-white mb-8 lg:mb-8">{t("nav.get-started")}</Button>
         </Link>
       </div>

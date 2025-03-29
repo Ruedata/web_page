@@ -51,7 +51,7 @@ const Header = () => {
             </Button>
           </Link>
 
-          <Link href="/get-started">
+          <Link href="/get-started/">
             <Button className="primary text-white">{t("nav.get-started")}</Button>
           </Link>
         </div>
@@ -124,7 +124,7 @@ const Header = () => {
                   {t("nav.login")}
                 </Button>
                 </Link>
-              <Link href="/get-started" className="w-full">
+              <Link href="/get-started/" className="w-full">
                 <Button className="bg-cyan-400 hover:bg-cyan-500 text-white w-full">{t("nav.get-started")}</Button>
               </Link>
             </div>

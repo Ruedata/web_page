@@ -63,7 +63,7 @@ export const features = [
     ul: [],
     image: '/images/manager.jpg',
     button: true,
-    link: '/get-started',
+    link: '/get-started/',
   },
 ];
 

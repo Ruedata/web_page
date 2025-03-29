@@ -4,13 +4,23 @@ import "./globals.css"
 import { LanguageProvider } from "@/components/Language-provider"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import LocalizedHead from "@/components/LocalizedHead"
 import type { Viewport } from "next"
+import { translations } from "@/data/l10n"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Ruedata - Tire Management with AI",
   description: "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability",
+  alternates: {
+    canonical: "https://ruedata.com",
+    languages: {
+      'en': 'https://ruedata.com/',
+      'es': 'https://ruedata.com/es/',
+      'pt': 'https://ruedata.com/pt/'
+    }
+  }
 }
 
 export const viewport: Viewport = {
@@ -47,11 +57,12 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="en" href="https://ruedata.com/" />
         <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
         <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
-        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com/" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>
           <div className="">
+            <LocalizedHead />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
