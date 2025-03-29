@@ -21,15 +21,16 @@ const LANGUAGE_PATHS: Record<Language, string> = {
   pt: "/pt/",
 }
 
-const normalizePath = (path: string): string => {
-  return path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path
+const ensureTrailingSlash = (path: string): string => {
+  if (path === '/') return path
+  return path.endsWith('/') ? path : `${path}/`
 }
 
 const isLanguageRootPath = (path: string): boolean => {
-  const normalizedPath = normalizePath(path)
+  const normalizedPath = path.endsWith('/') ? path : `${path}/`
   return normalizedPath === '/' || 
-         normalizedPath === '/es' || 
-         normalizedPath === '/pt'
+         normalizedPath === '/es/' || 
+         normalizedPath === '/pt/'
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
@@ -52,24 +53,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (isClient) {
       const currentPath = window.location.pathname
-      
-      const normalizedPath = currentPath.endsWith('/') && currentPath !== '/' 
-        ? currentPath.slice(0, -1) 
-        : currentPath
+      const pathWithTrailingSlash = ensureTrailingSlash(currentPath)
       
       const savedLanguage = localStorage.getItem("preferredLanguage") as Language | null
       
       if (savedLanguage && ["en", "es", "pt"].includes(savedLanguage)) {
         const expectedPath = LANGUAGE_PATHS[savedLanguage]
-        const normalizedExpectedPath = expectedPath.endsWith('/') && expectedPath !== '/' 
-          ? expectedPath.slice(0, -1) 
-          : expectedPath
         
-        const isOnLanguagePath = normalizedPath === '/' || 
-                                normalizedPath === '/es' || 
-                                normalizedPath === '/pt'
-        
-        if (isOnLanguagePath && normalizedPath !== normalizedExpectedPath) {
+        if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
           window.location.href = expectedPath
         }
       } else {
@@ -80,22 +71,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
           localStorage.setItem("preferredLanguage", browserLang)
           
           const expectedPath = LANGUAGE_PATHS[browserLang]
-          const normalizedExpectedPath = expectedPath.endsWith('/') && expectedPath !== '/' 
-            ? expectedPath.slice(0, -1) 
-            : expectedPath
           
-          const isOnLanguagePath = normalizedPath === '/' || 
-                                  normalizedPath === '/es' || 
-                                  normalizedPath === '/pt'
-          
-          if (isOnLanguagePath && normalizedPath !== normalizedExpectedPath) {
+          if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
             window.location.href = expectedPath
           }
         } else {
           setLanguage("en")
           localStorage.setItem("preferredLanguage", "en")
           
-          if (normalizedPath === '/es' || normalizedPath === '/pt') {
+          if (pathWithTrailingSlash === '/es/' || pathWithTrailingSlash === '/pt/') {
             window.location.href = "/"
           }
         }
@@ -109,12 +93,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       localStorage.setItem("preferredLanguage", lang)
       
       const currentPath = window.location.pathname
-      const normalizedPath = normalizePath(currentPath)
+      const pathWithTrailingSlash = ensureTrailingSlash(currentPath)
       
       const expectedPath = LANGUAGE_PATHS[lang]
-      const normalizedExpectedPath = normalizePath(expectedPath)
       
-      if (isLanguageRootPath(currentPath) && normalizedPath !== normalizedExpectedPath) {
+      if (isLanguageRootPath(currentPath) && pathWithTrailingSlash !== expectedPath) {
         window.location.href = expectedPath
       }
     }
