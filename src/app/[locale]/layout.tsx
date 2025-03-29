@@ -1,10 +1,12 @@
 import type React from "react"
 import { Inter } from "next/font/google"
-import "./globals.css"
-import { LanguageProvider } from "@/components/Language-provider"
+import "../globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import type { Viewport } from "next"
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { notFound } from 'next/navigation'
+import {routing} from '@/i18n/routing'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,11 +21,19 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout({
+
+export default async function LocaleLayout({
   children,
+  params,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  params: Promise<{locale: string}>;
 }) {
+  const {locale} = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -36,27 +46,27 @@ export default function RootLayout({
       "query-input": "required name=search_term_string",
     },
   }
-
+  console.log('=============================')
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <link rel="alternate" hrefLang="en" href="https://ruedata.com/" />
+        <link rel="alternate" hrefLang="en" href="https://ruedata.com/en/" />
         <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
         <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
         <link rel="alternate" hrefLang="x-default" href="https://ruedata.com" />
       </head>
       <body className={inter.className}>
-        <LanguageProvider>
+        <NextIntlClientProvider>
           <div className="">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
-        </LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

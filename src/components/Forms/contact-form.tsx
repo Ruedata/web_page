@@ -10,10 +10,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { toast } from "@/components/ui/use-toast"
 import { Card, CardContent } from "@/components/ui/card"
-import { useLanguage } from "../Language-provider"
+import { useTranslations } from 'next-intl';
 
 export default function ContactForm() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formValues, setFormValues] = useState({
     firstName: "",
@@ -37,7 +37,7 @@ export default function ContactForm() {
 
     try {
       const result = await submitContactForm(formValues)
-      console.log('dasdasdasdasd')
+
       if (result.success) {
         toast({
           title: t('form.sent'),

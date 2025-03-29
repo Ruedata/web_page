@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useLanguage } from "../Language-provider"
+import { useTranslations } from 'next-intl';
 
 export type CarouselItem = {
   id: number
@@ -22,7 +22,7 @@ interface CarouselProps {
 export default function Carousel({ items, autoPlay = true, interval = 5000 }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [language, setLanguage] = useState<"en" | "es" | "pt">("en")
-  const { t } = useLanguage()
+  const t = useTranslations();
 
   // Detect browser language on component mount
   useEffect(() => {
