@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "about": "About us",
+    "case-studies": "Case Studies",
+    "login": "LOGIN",
+    "get-started": "Get Started"
+  },
+  "hero": {
+    "title": "Digitalize and optimize tire management with AI",
+    "subtitle": "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability"
+  },
+  "solution": {
+    "title": "Solution for Transportation fleets"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "aipower": "AI-powered tire management solutions for transportation fleets."
+  },
+  "features": {
+    "title": "Solution for Transportation fleets",
+    "content": "Our goal is to transform the transportation industry by reducing tire consumption and maximizing the profitability of your fleet's operating expenses.",
+    "maintenanceTeam": "Maintenance Team",
+    "maintenanceTeamParagraph": "Minimize field downtime and optimize planning time",
+    "procurement": "Procurement",
+    "procurementParagraph": "Tire purchase based on real performance data",
+    "fleetManager": "Fleet Manager",
+    "fleetManagerParagraph": "Track key metrics and make data-driven decisions",
+    "inspectionUnderOneMinute": "Inspection under one minute.",
+    "noManualEntry": "No manual entry.",
+    "makeRotationsEasily": "Make rotations easily.",
+    "workOfflineMode": "Works offline mode.",
+    "smartErrorsAlert": "Smart errors alert.",
+    "compliance": "Ensure compliance standards.",
+    "prevent": "Prevent road accidents.",
+    "minimize": "Minimize vehicule downtime.",
+    "lower": "Lower service costs.",
+    "fulloperation": "Full operation visibility.",
+    "realtime": "Real time inventory tracking.",
+    "powerBi": "Power BI reports.",
+    "monitorTireDisposal": "Monitor tire disposal.",
+    "aiBased": "AI based wear analysis.",
+    "automated": "Automated rotation alerts.",
+    "detechMechanicalFailures": "Detect mechanical failures.",
+    "trackWorstPerformance": "Track worst performance.",
+    "title1": "Faster and accurate inspections.",
+    "title2": "Increase road safety",
+    "title3": "Centralized management",
+    "title4": "Predictive and preventive maintenance",
+    "title5": "Maximize tire lifespan and savings",
+    "title6": "With Ruedata, your drivers get home safely",
+    "p1": "Reduce inspection time and minimize errors with automated data collection.",
+    "p2": "Prevent blowouts, reduce service costs, and minimize vehicle downtime.",
+    "p3": "Gain full visibility and control over your entire tire operation in one platform.",
+    "p4": "Automated maintenance plans to optimize performance and reduce manual work.",
+    "p5": "Extend tire life, increase retreading, and cut costs by up to 30%.",
+    "p6": "Our AI-powered platform prevents tire-related accidents by ensuring optimal maintenance, timely replacements, and real-time monitoring. Reduce blowouts, minimize downtime, and give your team the confidence to drive worry-free.",
+    "LowerCostMilage": "Lower cost mileage.",
+    "increaseLifeSpam": "Increase lifespan.",
+    "retreadingRates": "Improve retreading rates.",
+    "extendLife": "Extend tire life, increase retreading, and cut costs by up to 30%.",
+    "smarterTitle": "A smarter way to manage tires",
+    "smarterParagraph": "We connect fleets, managers, and maintenance teams through a single platform, reducing tire costs, improving safety, and optimizing performance."
+  },
+  "trustedBy": {
+    "title": "Trusted by"
+  },
+  "partners": {
+    "title": "Partners"
+  },
+  "backedBy": {
+    "title": "Backed by"
+  },
+  "case": {
+    "studies": "Case Studies",
+    "cemex": "CEMEX MEXICO",
+    "logistics": "GRUPO LOGISTICS",
+    "emsula": "EMSULA",
+    "green": "GREEN MOVIL",
+    "traxion": "TRAXION",
+    "cemex": {
+      "description": "By centralizing tire data and optimizing maintenance, we've improved operational efficiency, enhanced traceability, and reduced tire-related costs across Cemex's supply chain."
+    },
+    "logistics": {
+      "description": "Ruedata replaced our error-prone paper processes with a digital solution, saving us 40% on tire expenses. It offers valuable insights into tire performance, helping us make smarter investment decisions. We went from spending nearly a million per month on tires to 60% of that cost."
+    },
+    "emsula": {
+      "description": "Ruedata gave us KPIs we didn't have before, improving purchasing decisions and tire maintenance. It helped us control expenses despite rising costs and changed our tire management culture for the better."
+    },
+    "green": {
+      "description": "With Ruedata, we cut tire costs by 30% and went from needing six people for tire management to just one. It simplified complex processes and maximized tire usage, driving significant savings."
+    },
+    "traxion": {
+      "description": "Ruedata provides crucial data visibility across our 7,000 vehicles, boosting operational efficiency. It strikes the right balance between quality and price, offering top-notch business intelligence for decision-making at all levels."
+    }
+  },
+  "form": {
+    "title": "Schedule your Demo",
+    "name": "Name*",
+    "lastname": "Lastname",
+    "lastnamePlaceholder": "your lastname",
+    "email": "Email*",
+    "emailPlaceholder": "you@company-name.com",
+    "company": "Company name*",
+    "companyPlaceholder": "Company name",
+    "phone": "Phone*",
+    "phonePlaceholder": "+1 XXX XXX XXX",
+    "message": "Message (optional)",
+    "messagePlaceholder": "What can we help you with?",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Thank you for your interest! We will get back to you soon.",
+    "sent": "From sent"
+  },
+  "indicators": {
+    "vehicles": "Vehicles Inspected",
+    "tires": "Tires Analyzed",
+    "costSavings": "USD Saved"
+  }
+}

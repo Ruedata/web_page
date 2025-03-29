@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "solutions": "Soluciones",
+    "about": "Sobre nosotros",
+    "case-studies": "Casos de éxito",
+    "login": "Iniciar sesión",
+    "get-started": "Comenzar"
+  },
+  "hero": {
+    "title": "Digitaliza y optimiza la gestión de llantas con IA",
+    "subtitle": "Software que ahorra hasta un 30% en gastos de llantas mientras mejora la seguridad y sostenibilidad de tu flota"
+  },
+  "solution": {
+    "title": "Solución para flotas de transporte"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "aipower": "Soluciones de gestión de llantas impulsadas por IA para flotas de transporte."
+  },
+  "features": {
+    "title": "Solución para flotas de transporte",
+    "content": "Nuestro objetivo es transformar la industria del transporte reduciendo el consumo de llantas y maximizando la rentabilidad de los gastos operativos de tu flota.",
+    "maintenanceTeam": "Equipo de mantenimiento",
+    "maintenanceTeamParagraph": "Minimiza el tiempo fuera de operación y optimiza la planeación",
+    "procurement": "Compras",
+    "procurementParagraph": "Compra de llantas basada en datos reales de desempeño",
+    "fleetManager": "Gestor de flota",
+    "fleetManagerParagraph": "Haz seguimiento a métricas clave y toma decisiones basadas en datos",
+    "inspectionUnderOneMinute": "Inspección en menos de un minuto.",
+    "noManualEntry": "Sin ingreso manual.",
+    "makeRotationsEasily": "Realiza rotaciones fácilmente.",
+    "workOfflineMode": "Funciona sin conexión.",
+    "smartErrorsAlert": "Alertas inteligentes de errores.",
+    "compliance": "Cumple con los estándares normativos.",
+    "prevent": "Previene accidentes en carretera.",
+    "minimize": "Minimiza el tiempo fuera de operación del vehículo.",
+    "lower": "Reduce los costos de servicio.",
+    "fulloperation": "Visibilidad total de la operación.",
+    "realtime": "Seguimiento en tiempo real del inventario.",
+    "powerBi": "Reportes en Power BI.",
+    "monitorTireDisposal": "Monitorea el desecho de llantas.",
+    "aiBased": "Análisis de desgaste basado en IA.",
+    "automated": "Alertas automáticas de rotación.",
+    "detechMechanicalFailures": "Detecta fallas mecánicas.",
+    "trackWorstPerformance": "Identifica el peor desempeño.",
+    "title1": "Inspecciones más rápidas y precisas",
+    "title2": "Incrementa la seguridad en carretera",
+    "title3": "Gestión centralizada",
+    "title4": "Mantenimiento preventivo y predictivo",
+    "title5": "Maximiza la vida útil de las llantas y el ahorro",
+    "title6": "Con Ruedata, tus conductores regresan seguros a casa",
+    "p1": "Reduce el tiempo de inspección y minimiza errores con recolección automatizada de datos.",
+    "p2": "Previene estallamientos, reduce los costos de servicio y minimiza el tiempo fuera de operación.",
+    "p3": "Obtén visibilidad y control total de toda la operación de llantas en una sola plataforma.",
+    "p4": "Planes de mantenimiento automatizados para optimizar el desempeño y reducir el trabajo manual.",
+    "p5": "Extiende la vida útil de las llantas, incrementa el renovado y reduce costos hasta en un 30%.",
+    "p6": "Nuestra plataforma impulsada por IA previene accidentes relacionados con llantas al garantizar un mantenimiento óptimo, reemplazos oportunos y monitoreo en tiempo real. Reduce estallamientos, minimiza tiempos muertos y brinda a tu equipo la confianza de conducir sin preocupaciones.",
+    "LowerCostMilage": "Kilometraje a menor costo.",
+    "increaseLifeSpam": "Incrementa la vida útil.",
+    "retreadingRates": "Mejora la tasa de renovado.",
+    "extendLife": "Extiende la vida útil de las llantas, incrementa el renovado y reduce costos hasta en un 30%.",
+    "smarterTitle": "Una forma más inteligente de gestionar llantas",
+    "smarterParagraph": "Conectamos flotas, gestores y equipos de mantenimiento en una sola plataforma, reduciendo costos de llantas, mejorando la seguridad y optimizando el desempeño."
+  },
+  "trustedBy": {
+    "title": "Confiado por"
+  },
+  "partners": {
+    "title": "Aliados"
+  },
+  "backedBy": {
+    "title": "Respaldado por"
+  },
+  "case": {
+    "studies": "Casos de éxito",
+    "cemex": "CEMEX MÉXICO",
+    "logistics": "GRUPO LOGISTICS",
+    "emsula": "EMSULA",
+    "green": "GREEN MOVIL",
+    "traxion": "TRAXIÓN",
+    "cemex": {
+      "description": "Centralizando los datos de llantas y optimizando el mantenimiento, mejoramos la eficiencia operativa, aumentamos la trazabilidad y reducimos los costos relacionados con llantas en la cadena de suministro de Cemex."
+    },
+    "logistics": {
+      "description": "Ruedata reemplazó nuestros procesos manuales con una solución digital, lo que nos permitió ahorrar 40% en gastos de llantas. Nos brinda información valiosa sobre el desempeño de las llantas, ayudándonos a tomar decisiones de inversión más inteligentes. Pasamos de gastar casi un millón al mes en llantas al 60% de ese costo."
+    },
+    "emsula": {
+      "description": "Ruedata nos brindó KPIs que antes no teníamos, mejorando la toma de decisiones en compras y mantenimiento de llantas. Nos ayudó a controlar gastos pese al aumento de costos y cambió positivamente nuestra cultura de gestión de llantas."
+    },
+    "green": {
+      "description": "Con Ruedata, redujimos los costos de llantas en un 30% y pasamos de necesitar seis personas para la gestión de llantas a solo una. Simplificó procesos complejos y maximizó el uso de las llantas, generando ahorros significativos."
+    },
+    "traxion": {
+      "description": "Ruedata nos brinda visibilidad de datos cruciales en nuestra flota de 7,000 vehículos, mejorando la eficiencia operativa. Logra un equilibrio ideal entre calidad y precio, ofreciendo inteligencia de negocio de alto nivel para la toma de decisiones."
+    }
+  },
+  "form": {
+    "title": "Agenda tu demo",
+    "name": "Nombre*",
+    "lastname": "Apellido",
+    "lastnamePlaceholder": "tu apellido",
+    "email": "Correo electrónico*",
+    "emailPlaceholder": "tu@empresa.com",
+    "company": "Nombre de la empresa*",
+    "companyPlaceholder": "Nombre de la empresa",
+    "phone": "Teléfono*",
+    "phonePlaceholder": "+52 XXX XXX XXXX",
+    "message": "Mensaje (opcional)",
+    "messagePlaceholder": "¿En qué podemos ayudarte?",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Gracias por tu interés! Nos pondremos en contacto contigo pronto.",
+    "sent": "Formulario enviado"
+  },
+  "indicators": {
+    "tires": "Llantas Analizados",
+    "vehicles": "Vehículos Inspeccionados",
+    "costSavings": "USD Ahorrados"
+  }
+}
