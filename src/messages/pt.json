@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "solutions": "Soluções",
+    "about": "Sobre nós",
+    "case-studies": "Casos de sucesso",
+    "login": "Entrar",
+    "get-started": "Comece agora"
+  },
+  "hero": {
+    "title": "Digitalize e otimize a gestão de pneus com IA",
+    "subtitle": "Software que economiza até 30% nos gastos com pneus enquanto melhora a segurança e a sustentabilidade da frota"
+  },
+  "solution": {
+    "title": "Solução para frotas de transporte"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de serviço",
+    "aipower": "Soluções de gestão de pneus com IA para frotas de transporte."
+  },
+  "features": {
+    "title": "Solução para frotas de transporte",
+    "content": "Nosso objetivo é transformar a indústria de transporte reduzindo o consumo de pneus e maximizando a rentabilidade dos custos operacionais da sua frota.",
+    "maintenanceTeam": "Equipe de manutenção",
+    "maintenanceTeamParagraph": "Minimize o tempo de inatividade e otimize o planejamento",
+    "procurement": "Compras",
+    "procurementParagraph": "Compra de pneus com base em dados reais de desempenho",
+    "fleetManager": "Gestor de frota",
+    "fleetManagerParagraph": "Acompanhe métricas-chave e tome decisões orientadas por dados",
+    "inspectionUnderOneMinute": "Inspeção em menos de um minuto.",
+    "noManualEntry": "Sem digitação manual.",
+    "makeRotationsEasily": "Faça rotações com facilidade.",
+    "workOfflineMode": "Funciona no modo offline.",
+    "smartErrorsAlert": "Alertas inteligentes de falhas.",
+    "compliance": "Garante conformidade com os padrões.",
+    "prevent": "Previne acidentes nas estradas.",
+    "minimize": "Minimiza o tempo de inatividade do veículo.",
+    "lower": "Reduz os custos de serviço.",
+    "fulloperation": "Visibilidade total da operação.",
+    "realtime": "Rastreamento de inventário em tempo real.",
+    "powerBi": "Relatórios no Power BI.",
+    "monitorTireDisposal": "Monitore o descarte de pneus.",
+    "aiBased": "Análise de desgaste com IA.",
+    "automated": "Alertas automáticos de rotação.",
+    "detechMechanicalFailures": "Detecta falhas mecânicas.",
+    "trackWorstPerformance": "Acompanhe os piores desempenhos.",
+    "title1": "Inspeções mais rápidas e precisas",
+    "title2": "Aumente a segurança nas estradas",
+    "title3": "Gestão centralizada",
+    "title4": "Manutenção preventiva e preditiva",
+    "title5": "Maximize a vida útil dos pneus e a economia",
+    "title6": "Com a Ruedata, seus motoristas voltam para casa com segurança",
+    "p1": "Reduza o tempo de inspeção e minimize erros com coleta automatizada de dados.",
+    "p2": "Previna estouros, reduza os custos de serviço e minimize o tempo de inatividade do veículo.",
+    "p3": "Tenha total visibilidade e controle de toda a operação de pneus em uma única plataforma.",
+    "p4": "Planos de manutenção automatizados para otimizar o desempenho e reduzir o trabalho manual.",
+    "p5": "Prolongue a vida útil dos pneus, aumente o regravado e reduza custos em até 30%.",
+    "p6": "Nossa plataforma com IA previne acidentes relacionados a pneus garantindo manutenção ideal, substituições no tempo certo e monitoramento em tempo real. Reduza estouros, minimize paradas e dê confiança à sua equipe para dirigir com tranquilidade.",
+    "LowerCostMilage": "Quilometragem com menor custo.",
+    "increaseLifeSpam": "Aumente a vida útil.",
+    "retreadingRates": "Melhore as taxas de regravado.",
+    "extendLife": "Prolongue a vida útil dos pneus, aumente o regravado e reduza custos em até 30%.",
+    "smarterTitle": "Uma forma mais inteligente de gerenciar pneus",
+    "smarterParagraph": "Conectamos frotas, gestores e equipes de manutenção em uma única plataforma, reduzindo custos com pneus, melhorando a segurança e otimizando o desempenho."
+  },
+  "trustedBy": {
+    "title": "Confiado por"
+  },
+  "partners": {
+    "title": "Parceiros"
+  },
+  "backedBy": {
+    "title": "Apoiado por"
+  },
+  "case": {
+    "studies": "Casos de sucesso",
+    "cemex": "CEMEX MÉXICO",
+    "logistics": "GRUPO LOGISTICS",
+    "emsula": "EMSULA",
+    "green": "GREEN MOVIL",
+    "traxion": "TRAXION",
+    "cemex": {
+      "description": "Ao centralizar os dados dos pneus e otimizar a manutenção, melhoramos a eficiência operacional, aumentamos a rastreabilidade e reduzimos os custos relacionados a pneus na cadeia de suprimentos da Cemex."
+    },
+    "logistics": {
+      "description": "A Ruedata substituiu nossos processos manuais por uma solução digital, economizando 40% nos gastos com pneus. Oferece insights valiosos sobre o desempenho dos pneus, ajudando-nos a tomar decisões de investimento mais inteligentes. Passamos de quase um milhão por mês em pneus para apenas 60% desse valor."
+    },
+    "emsula": {
+      "description": "A Ruedata nos trouxe indicadores que antes não tínhamos, melhorando as decisões de compra e manutenção de pneus. Ajudou a controlar os gastos mesmo com os custos em alta e mudou positivamente nossa cultura de gestão de pneus."
+    },
+    "green": {
+      "description": "Com a Ruedata, reduzimos os custos com pneus em 30% e passamos de seis pessoas na gestão para apenas uma. Simplificou processos complexos e maximizou o uso dos pneus, gerando economia significativa."
+    },
+    "traxion": {
+      "description": "A Ruedata oferece visibilidade de dados essenciais para nossa frota de 7.000 veículos, aumentando a eficiência operacional. Encontra o equilíbrio ideal entre qualidade e preço, com inteligência de negócios de alto nível para decisões em todos os níveis."
+    }
+  },
+  "form": {
+    "title": "Agende sua demonstração",
+    "name": "Nome*",
+    "lastname": "Sobrenome",
+    "lastnamePlaceholder": "seu sobrenome",
+    "email": "Email*",
+    "emailPlaceholder": "voce@nome-da-empresa.com",
+    "company": "Nome da empresa*",
+    "companyPlaceholder": "Nome da empresa",
+    "phone": "Telefone*",
+    "phonePlaceholder": "+55 XX XXXXX XXXX",
+    "message": "Mensagem (opcional)",
+    "messagePlaceholder": "Como podemos te ajudar?",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Obrigado pelo interesse! Em breve entraremos em contato.",
+    "sent": "Formulário enviado"
+  },
+  "indicators": {
+    "vehicles": "Veículos inspeccionados",
+    "tires": "Pneus analisados",
+    "costSavings": "USD poupados"
+  }
+}
