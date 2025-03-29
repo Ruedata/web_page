@@ -6,7 +6,6 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import LocalizedHead from "@/components/LocalizedHead"
 import type { Viewport } from "next"
-import { translations } from "@/data/l10n"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -42,10 +41,20 @@ export default function RootLayout({
     description: metadata.description,
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://ruedata.com/search?q={search_term_string}",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://ruedata.com/search?q={search_term_string}"
+      },
       "query-input": "required name=search_term_string",
     },
-  }
+    image: "https://ruedata.com/logo.svg",
+    sameAs: [
+      "https://www.facebook.com/Ruedata",
+      "https://www.linkedin.com/company/ruedata/",
+      "https://www.instagram.com/ruedata/"
+    ],
+    inLanguage: ["en", "es", "pt"], // English, Spanish, Portuguese
+  };
 
   return (
     <html lang="en">
