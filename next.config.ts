@@ -2,6 +2,26 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/es',
+        destination: '/',
+      },
+      {
+        source: '/es/:path*',
+        destination: '/:path*',
+      },
+      {
+        source: '/pt',
+        destination: '/',
+      },
+      {
+        source: '/pt/:path*',
+        destination: '/:path*',
+      },
+    ];
+  },
   async redirects() {
     return [
       {
