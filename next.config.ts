@@ -3,26 +3,29 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 
 const nextConfig: NextConfig = {
-  /* config options here */
   trailingSlash: true,
   async redirects() {
     return [
       {
-        source: '/about/',
-        destination: '/',
-        permanent: true, // Redirección permanente (código 308)
+        source: '/:locale/about/',
+        destination: '/:locale/',
+        permanent: true,
       },
       {
-        source: '/contact/',
-        destination: '/',
-        permanent: true, // Redirección permanente (código 308)
+        source: '/:locale/contact/',
+        destination: '/:locale/',
+        permanent: true,
       },
       {
-        source: '/blog',
-        destination: '/',
-        permanent: true, // Redirección permanente (código 308)
+        source: '/:locale/blog',
+        destination: '/:locale/',
+        permanent: true,
       },
-      // Puedes agregar más redirecciones aquí
+      {
+        source: '/:locale/get-started',
+        destination: '/:locale/demo',
+        permanent: true,
+      }
     ]
   },
 };

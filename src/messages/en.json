@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "Ruedata - Tire Management with AI",
+    "description": "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability"
+  },
   "nav": {
     "solutions": "Solutions",
     "about": "About us",
@@ -11,7 +15,7 @@
     "subtitle": "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability"
   },
   "solution": {
-    "title": "Solution for Transportation fleets"
+    "title": "Solution for transportation fleets"
   },
   "footer": {
     "rights": "All rights reserved",
@@ -20,7 +24,7 @@
     "aipower": "AI-powered tire management solutions for transportation fleets."
   },
   "features": {
-    "title": "Solution for Transportation fleets",
+    "title": "Solution for transportation fleets",
     "content": "Our goal is to transform the transportation industry by reducing tire consumption and maximizing the profitability of your fleet's operating expenses.",
     "maintenanceTeam": "Maintenance Team",
     "maintenanceTeamParagraph": "Minimize field downtime and optimize planning time",

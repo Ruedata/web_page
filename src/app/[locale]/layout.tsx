@@ -3,25 +3,33 @@ import { Inter } from "next/font/google"
 import "../globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import LocalizedHead from "@/components/LocalizedHead"
 import type { Viewport } from "next"
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import {routing} from '@/i18n/routing'
+import {getTranslations} from 'next-intl/server';
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "Ruedata - Tire Management with AI",
-  description: "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability",
-  alternates: {
-    canonical: "https://ruedata.com",
-    languages: {
-      'en': 'https://ruedata.com/',
-      'es': 'https://ruedata.com/es/',
-      'pt': 'https://ruedata.com/pt/'
+export async function generateMetadata({params}: { params: { locale: string } }) {
+  const { locale } = await params;
+  const t = await getTranslations({locale, namespace: 'metadata'});
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    // icons: {
+    //   icon: "/favicon.ico",
+    // },
+    alternates: {
+      canonical: "https://ruedata.com",
+      languages: {
+        'en': 'https://ruedata.com/en/',
+        'es': 'https://ruedata.com/es/',
+        'pt': 'https://ruedata.com/pt/'
+      }
     }
-  }
+  };
 }
 
 export const viewport: Viewport = {
@@ -39,31 +47,46 @@ export default async function LocaleLayout({
   params: Promise<{locale: string}>;
 }) {
   const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'metadata'});
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Ruedata",
-    url: "https://ruedata.com",
-    description: metadata.description,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://ruedata.com/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string",
-    },
-    image: "https://ruedata.com/logo.svg",
-    sameAs: [
+    "@type": "Corporation",
+    "name": "Ruedata",
+    "legalName": "Ruedata, Inc.",
+    "url": "https://ruedata.com",
+    "logo": "https://ruedata.com/logo.svg",
+    "description": t('description'),
+    "image": "https://ruedata.com/logo.svg",
+    "sameAs": [
       "https://www.facebook.com/Ruedata",
       "https://www.linkedin.com/company/ruedata/",
       "https://www.instagram.com/ruedata/"
     ],
-    inLanguage: ["en", "es", "pt"], // English, Spanish, Portuguese
+    "inLanguage": ["en", "es", "pt"],
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dover",
+        "addressRegion": "DE",
+        "addressCountry": "USA",
+        "postalCode": "19901",
+        "streetAddress": "3500 South Dupont Highway"
+    },
+    "founder": [
+        {
+            "@type": "Person",
+            "name": "Sebastian Baquero",
+            "url": "https://www.linkedin.com/in/sebastian-baquero-/"
+        },
+        {
+            "@type": "Person",
+            "name": "Jorge Quinche",
+            "url": "https://www.linkedin.com/in/jorgequinche-sostenibilidad-transporte-flotas-ahorro-gestion-llantas-mobility-tecnologia-datos-ai/"
+        }
+    ]
   };
 
   return (
@@ -73,15 +96,10 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <link rel="alternate" hrefLang="en" href="https://ruedata.com/en/" />
-        <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
-        <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
-        <link rel="alternate" hrefLang="x-default" href="https://ruedata.com/" />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider>
           <div className="">
-            <LocalizedHead />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
