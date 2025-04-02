@@ -3,42 +3,28 @@
 import { ChangeEvent, useTransition } from 'react'
 import { Locale } from 'next-intl'
 import {usePathname, useRouter} from '@/i18n/navigation'
-import {useParams} from 'next/navigation';
+import {useParams} from 'next/navigation'
+import { setCookie } from 'cookies-next';
 
 export default function LanguageSwitcher({locale}: {locale: Locale}) {
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
   const pathname = usePathname()
-  const params = useParams();
+  const params = useParams()
 
   function handleLanguageChange(event: ChangeEvent<HTMLSelectElement>) {
     const nextLocale = event.target.value as Locale;
     startTransition(() => {
+      setCookie('preferredLanguage', nextLocale, { maxAge: 365 * 24 * 60 * 60 });
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
         // are used in combination with a given `pathname`. Since the two will
         // always match for the current route, we can skip runtime checks.
         {pathname, params},
         {locale: nextLocale}
-      );
-    });
+      )
+    })
   }
-
-  // const handleLanguageChange = (locale: string) => {
-  //   setCookie('preferredLanguage', locale, { maxAge: 365 * 24 * 60 * 60 });
-
-  //   const currentPath = window.location.pathname;
-  //   let newPath;
-
-  //   if (locale === 'en') {
-  //     newPath = currentPath.replace(/^\/(en|es|pt)/, '') || '/';
-  //   } else {
-  //     const pathWithoutLocale = currentPath.replace(/^\/(en|es|pt)/, '');
-  //     newPath = `/${locale}${pathWithoutLocale}`;
-  //   }
-
-  //   window.location.href = newPath;
-  // };
 
   return (
     <div className="relative inline-block text-left">

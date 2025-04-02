@@ -37,7 +37,7 @@ export default function ContactForm() {
 
     try {
       const result = await submitContactForm(formValues)
-      console.log('dasdasdasdasd')
+
       if (result.success) {
         toast({
           title: t('form.sent'),
