@@ -75,24 +75,24 @@
   },
   "case": {
     "studies": "Casos de sucesso",
-    "cemex": "CEMEX MÉXICO",
-    "logistics": "GRUPO LOGISTICS",
-    "emsula": "EMSULA",
-    "green": "GREEN MOVIL",
-    "traxion": "TRAXION",
     "cemex": {
+      "title": "CEMEX MÉXICO",
       "description": "Ao centralizar os dados dos pneus e otimizar a manutenção, melhoramos a eficiência operacional, aumentamos a rastreabilidade e reduzimos os custos relacionados a pneus na cadeia de suprimentos da Cemex."
     },
     "logistics": {
+      "title": "GRUPO LOGISTICS",
       "description": "A Ruedata substituiu nossos processos manuais por uma solução digital, economizando 40% nos gastos com pneus. Oferece insights valiosos sobre o desempenho dos pneus, ajudando-nos a tomar decisões de investimento mais inteligentes. Passamos de quase um milhão por mês em pneus para apenas 60% desse valor."
     },
     "emsula": {
+      "title": "EMSULA",
       "description": "A Ruedata nos trouxe indicadores que antes não tínhamos, melhorando as decisões de compra e manutenção de pneus. Ajudou a controlar os gastos mesmo com os custos em alta e mudou positivamente nossa cultura de gestão de pneus."
     },
     "green": {
+      "title": "GREEN MOVIL",
       "description": "Com a Ruedata, reduzimos os custos com pneus em 30% e passamos de seis pessoas na gestão para apenas uma. Simplificou processos complexos e maximizou o uso dos pneus, gerando economia significativa."
     },
     "traxion": {
+      "title": "TRAXION",
       "description": "A Ruedata oferece visibilidade de dados essenciais para nossa frota de 7.000 veículos, aumentando a eficiência operacional. Encontra o equilíbrio ideal entre qualidade e preço, com inteligência de negócios de alto nível para decisões em todos os níveis."
     }
   },

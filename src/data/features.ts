@@ -97,31 +97,31 @@ export const carouselItems = [
   {
     id: 1,
     image: "/images/cemex.jpg",
-    title: "case.cemex",
+    title: "case.cemex.title",
     description: "case.cemex.description",
   },
   {
     id: 2,
     image: "/images/logistics.jpg",
-    title: "case.logistics",
+    title: "case.logistics.title",
     description: "case.logistics.description",
   },
   {
     id: 3,
     image: "/images/emsula.jpg",
-    title: "case.emsula",
+    title: "case.emsula.title",
     description: "case.emsula.description",
   },
   {
     id: 4,
     image: "/images/green.jpg",
-    title: "case.green",
+    title: "case.green.title",
     description: "case.green.description",
   },
   {
     id: 5,
     image: "/images/traxion.webp",
-    title: "case.traxion",
+    title: "case.traxion.title",
     description: "case.traxion.description",
   },
 ]

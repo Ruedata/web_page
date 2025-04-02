@@ -75,24 +75,24 @@
   },
   "case": {
     "studies": "Casos de éxito",
-    "cemex": "CEMEX MÉXICO",
-    "logistics": "GRUPO LOGISTICS",
-    "emsula": "EMSULA",
-    "green": "GREEN MOVIL",
-    "traxion": "TRAXIÓN",
     "cemex": {
+      "title": "CEMEX MÉXICO",
       "description": "Centralizando los datos de llantas y optimizando el mantenimiento, mejoramos la eficiencia operativa, aumentamos la trazabilidad y reducimos los costos relacionados con llantas en la cadena de suministro de Cemex."
     },
     "logistics": {
+      "title": "GRUPO LOGISTICS",
       "description": "Ruedata reemplazó nuestros procesos manuales con una solución digital, lo que nos permitió ahorrar 40% en gastos de llantas. Nos brinda información valiosa sobre el desempeño de las llantas, ayudándonos a tomar decisiones de inversión más inteligentes. Pasamos de gastar casi un millón al mes en llantas al 60% de ese costo."
     },
     "emsula": {
+      "title": "EMSULA",
       "description": "Ruedata nos brindó KPIs que antes no teníamos, mejorando la toma de decisiones en compras y mantenimiento de llantas. Nos ayudó a controlar gastos pese al aumento de costos y cambió positivamente nuestra cultura de gestión de llantas."
     },
     "green": {
+      "title": "GREEN MOVIL",
       "description": "Con Ruedata, redujimos los costos de llantas en un 30% y pasamos de necesitar seis personas para la gestión de llantas a solo una. Simplificó procesos complejos y maximizó el uso de las llantas, generando ahorros significativos."
     },
     "traxion": {
+      "title": "TRAXIÓN",
       "description": "Ruedata nos brinda visibilidad de datos cruciales en nuestra flota de 7,000 vehículos, mejorando la eficiencia operativa. Logra un equilibrio ideal entre calidad y precio, ofreciendo inteligencia de negocio de alto nivel para la toma de decisiones."
     }
   },

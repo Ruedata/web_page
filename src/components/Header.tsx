@@ -1,16 +1,18 @@
 "use client"
 
 import LanguageSwitcher from "./LanguageSwitcher"
-import Link from "next/link"
+// import Link from "next/link"
+import { Link } from '@/i18n/navigation'
 import Image from "next/image"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import { useState } from "react"
-import { useTranslations } from 'next-intl'
+import {useLocale, useTranslations} from 'next-intl';
 
 const Header = () => {
   const t = useTranslations()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const locale = useLocale()
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white px-4">
@@ -27,7 +29,7 @@ const Header = () => {
             <span className="text-sm text-navy-blue">+1 334-373-2288</span>
           </div>
 
-          <LanguageSwitcher />
+          <LanguageSwitcher locale={locale} />
 
           <Link href="https://app.ruedata.com/">
             <Button variant="outline" className="text-navy-blue border-navy-blue">
@@ -77,7 +79,7 @@ const Header = () => {
               <span className="text-sm text-navy-blue">+1 334-373-2288</span>
             </div>
             <div className="flex gap-2">
-              <LanguageSwitcher />
+              <LanguageSwitcher locale={locale} />
             </div>
             <div className="flex flex-col gap-2">
                 <Link href="https://app.ruedata.com/" className="w-full">

@@ -4,9 +4,9 @@ import "../globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import type { Viewport } from "next"
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { getMessages } from '@/i18n';
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { notFound } from 'next/navigation'
+import {routing} from '@/i18n/routing'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,28 +21,19 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export function generateStaticParams() {
-  return ['en', 'es', 'pt'].map((locale) => ({ locale }));
-}
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode,
-  params: { locale: string }
+  params: Promise<{locale: string}>;
 }) {
-  if (!['en', 'es', 'pt'].includes(locale)) {
+  const {locale} = await params;
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  
-  let messages;
-  try {
-    messages = await getMessages(locale);
-  } catch (_) {
-    notFound();
-  }
-  
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -55,7 +46,7 @@ export default async function LocaleLayout({
       "query-input": "required name=search_term_string",
     },
   }
-
+  console.log('=============================')
   return (
     <html lang={locale}>
       <head>
@@ -63,13 +54,13 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <link rel="alternate" hrefLang="en" href="https://ruedata.com/" />
+        <link rel="alternate" hrefLang="en" href="https://ruedata.com/en/" />
         <link rel="alternate" hrefLang="pt" href="https://ruedata.com/pt/" />
         <link rel="alternate" hrefLang="es" href="https://ruedata.com/es/" />
         <link rel="alternate" hrefLang="x-default" href="https://ruedata.com" />
       </head>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider>
           <div className="">
             <Header />
             <main className="flex-1">{children}</main>

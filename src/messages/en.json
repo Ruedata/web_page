@@ -64,7 +64,7 @@
     "smarterTitle": "A smarter way to manage tires",
     "smarterParagraph": "We connect fleets, managers, and maintenance teams through a single platform, reducing tire costs, improving safety, and optimizing performance."
   },
-  "trustedBy": {
+  "trustedBy":{
     "title": "Trusted by"
   },
   "partners": {
@@ -75,24 +75,24 @@
   },
   "case": {
     "studies": "Case Studies",
-    "cemex": "CEMEX MEXICO",
-    "logistics": "GRUPO LOGISTICS",
-    "emsula": "EMSULA",
-    "green": "GREEN MOVIL",
-    "traxion": "TRAXION",
     "cemex": {
-      "description": "By centralizing tire data and optimizing maintenance, we've improved operational efficiency, enhanced traceability, and reduced tire-related costs across Cemex's supply chain."
+      "title": "CEMEX MEXICO",
+      "description": "By centralizing tire data and optimizing maintenance, we’ve improved operational efficiency, enhanced traceability, and reduced tire-related costs across Cemex’s supply chain."
     },
     "logistics": {
+      "title": "GRUPO LOGISTICS",
       "description": "Ruedata replaced our error-prone paper processes with a digital solution, saving us 40% on tire expenses. It offers valuable insights into tire performance, helping us make smarter investment decisions. We went from spending nearly a million per month on tires to 60% of that cost."
     },
     "emsula": {
-      "description": "Ruedata gave us KPIs we didn't have before, improving purchasing decisions and tire maintenance. It helped us control expenses despite rising costs and changed our tire management culture for the better."
+      "title": "EMSULA",
+      "description": "Ruedata gave us KPIs we didn’t have before, improving purchasing decisions and tire maintenance. It helped us control expenses despite rising costs and changed our tire management culture for the better."
     },
     "green": {
+      "title": "GREEN MOVIL",
       "description": "With Ruedata, we cut tire costs by 30% and went from needing six people for tire management to just one. It simplified complex processes and maximized tire usage, driving significant savings."
     },
     "traxion": {
+      "title": "TRAXION",
       "description": "Ruedata provides crucial data visibility across our 7,000 vehicles, boosting operational efficiency. It strikes the right balance between quality and price, offering top-notch business intelligence for decision-making at all levels."
     }
   },
