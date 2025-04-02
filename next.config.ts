@@ -1,27 +1,10 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+
 
 const nextConfig: NextConfig = {
   /* config options here */
-  async rewrites() {
-    return [
-      {
-        source: '/es',
-        destination: '/',
-      },
-      {
-        source: '/es/:path*',
-        destination: '/:path*',
-      },
-      {
-        source: '/pt',
-        destination: '/',
-      },
-      {
-        source: '/pt/:path*',
-        destination: '/:path*',
-      },
-    ];
-  },
+  trailingSlash: true,
   async redirects() {
     return [
       {
@@ -43,5 +26,5 @@ const nextConfig: NextConfig = {
     ]
   },
 };
-
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);

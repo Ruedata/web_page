@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { useLanguage } from "@/components/Language-provider";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation'
 import { Button } from "./ui/Button";
 interface LeftRightSectionProps {
   title: string;
@@ -13,7 +13,7 @@ interface LeftRightSectionProps {
 }
 
 const LeftRightSection = ({ title, subtitle, ul, image, left=false, button=false, link }: LeftRightSectionProps) => {
-  const { t } = useLanguage();
+  const t = useTranslations();
 
   return (
     <section className="odd:bg-gray-200 w-full">

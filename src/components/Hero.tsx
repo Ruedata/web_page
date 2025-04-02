@@ -1,7 +1,7 @@
-import Link from "next/link"
+import { Link } from '@/i18n/navigation'
 import { Button } from "@/components/ui/Button"
 import Image from "next/image"
-import { useLanguage } from "@/components/Language-provider";
+import { useTranslations } from 'next-intl';
 
 interface HeroProps {
   title: string;
@@ -9,7 +9,7 @@ interface HeroProps {
   image: string;
 }
 const Hero  = ({title, subtitle, image}: HeroProps) => {
-  const { t } = useLanguage()
+  const t = useTranslations();
 
   return (
     <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-4">

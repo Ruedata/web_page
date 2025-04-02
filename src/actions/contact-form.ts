@@ -43,7 +43,6 @@ export async function submitContactForm(formData: ContactFormData) {
     // Inicializar el documento y cargar la información
     const doc = new GoogleSpreadsheet(GOOGLE_SHEETS_SPREADSHEET_ID, serviceAccountAuth);
     await doc.loadInfo();
-    console.log("Conectado a Google Sheets:", doc.title);
 
     // Obtener la primera hoja (puedes seleccionar por índice o título)
     const sheet = doc.sheetsByIndex[0];

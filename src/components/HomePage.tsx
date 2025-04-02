@@ -1,17 +1,18 @@
 "use client"
 
-import { useLanguage } from "@/components/Language-provider"
+import React from 'react';
+import { useTranslations } from 'next-intl';
 import Image from "next/image"
 
-import CarouselLogos from "@/components/CarouselLogos/CarouselLogos"
-import Hero from "@/components/Hero"
-import LeftRightSection from "@/components/LeftRightSection"
-import { features, images, partnersImages, backedByImages, carouselItems } from "@/data/features";
-import LogoPartners from "@/components/LogoPArtners/LogoPartners"
-import Carousel from "@/components/Carousel/Carousel"
+import CarouselLogos from "./CarouselLogos/CarouselLogos"
+import Hero from "./Hero"
+import LeftRightSection from "./LeftRightSection"
+import { features, images, partnersImages, backedByImages, carouselItems } from "../data/features"
+import LogoPartners from "./LogoPArtners/LogoPartners"
+import Carousel from "./Carousel/Carousel"
 
-export default function Home() {
-  const { t } = useLanguage()
+export function HomePage() {
+  const t = useTranslations()
 
   return (
     <div className="flex flex-col">
@@ -184,4 +185,3 @@ export default function Home() {
     </div>
   )
 }
-

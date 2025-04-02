@@ -1,11 +1,12 @@
 "use client"
 
-import { useLanguage } from "./Language-provider"
-import Link from "next/link"
+import { useTranslations } from 'next-intl';
+
+import { Link } from '@/i18n/navigation'
 import Image from "next/image"
 
 export default function Footer() {
-  const { t } = useLanguage()
+  const t = useTranslations('')
 
   return (
     <footer className="bg-navy-blue text-white">
