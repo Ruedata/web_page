@@ -10,9 +10,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { toast } from "@/components/ui/use-toast"
 import { Card, CardContent } from "@/components/ui/card"
-import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
+import { useLeadConnectorForm } from '@/hooks/useLeadConnectorForm';
 
 export default function ContactForm() {
   const t = useTranslations();
@@ -81,79 +82,15 @@ export default function ContactForm() {
     }
   }
 
-  useEffect(() => {
-    if (isDemoPage) {
-      const existingScript = document.querySelector('script[src="https://link.msgsndr.com/js/form_embed.js"]')
-      
-      if (!existingScript) {
-        const script = document.createElement('script')
-        script.src = "https://link.msgsndr.com/js/form_embed.js"
-        script.async = true
-        script.onload = () => {
-          console.log("Lead Connector script loaded successfully")
-        }
-        document.body.appendChild(script)
-        
-        return () => {
-          if (script.parentNode) {
-            document.body.removeChild(script)
-          }
-        }
-      }
-    }
-  }, [isDemoPage])
-  
   if (isDemoPage) {
-    const formConfig = {
-      en: {
-        src: "https://api.leadconnectorhq.com/widget/form/wbJPiAMZ0JfaOuevmOtT",
-        id: "inline-wbJPiAMZ0JfaOuevmOtT",
-        formName: "Web Form EN",
-        height: "640",
-        formId: "wbJPiAMZ0JfaOuevmOtT"
-      },
-      es: {
-        src: "https://api.leadconnectorhq.com/widget/form/XUk9LX4c3kzXbpIY9WbT",
-        id: "inline-XUk9LX4c3kzXbpIY9WbT",
-        formName: "Web Form ES",
-        height: "606",
-        formId: "XUk9LX4c3kzXbpIY9WbT"
-      },
-      pt: {
-        src: "https://api.leadconnectorhq.com/widget/form/wJI52MqrywZ8RGvZ8Eq7",
-        id: "inline-wJI52MqrywZ8RGvZ8Eq7",
-        formName: "Web Form PT",
-        height: "606",
-        formId: "wJI52MqrywZ8RGvZ8Eq7"
-      }
-    }
-    
-    const currentForm = formConfig[locale]
+    const { containerRef } = useLeadConnectorForm()
     
     return (
       <>
         <h1 className="text-4xl font-bold text-slate-800 text-center mb-12">{t('form.title')}</h1>
         <Card className="shadow-lg">
           <CardContent className="p-6">
-            <div className="h-[600px] md:h-[680px]">
-              <iframe
-                src={currentForm.src}
-                style={{width:"100%", height:"100%", border:"none", borderRadius:"3px"}}
-                id={currentForm.id}
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name={currentForm.formName}
-                data-height={currentForm.height}
-                data-layout-iframe-id={currentForm.id}
-                data-form-id={currentForm.formId}
-                title={currentForm.formName}
-              />
-            </div>
+            <div ref={containerRef} className="h-[600px] md:h-[680px]"></div>
           </CardContent>
         </Card>
       </>

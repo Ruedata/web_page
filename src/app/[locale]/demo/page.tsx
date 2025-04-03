@@ -1,9 +1,15 @@
 import type { Metadata } from "next"
 import ContactForm from "@/components/Forms/contact-form"
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: "RueData - Schedule Demo",
-  description: "Schedule a demo of RueData's tire management solution",
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const { locale } = params
+  const t = await getTranslations({ locale, namespace: 'metadata' })
+
+  return {
+    title: `RueData - ${t('demo.title')}`,
+    description: t('demo.description'),
+  }
 }
 
 export default function DemoPage() {
