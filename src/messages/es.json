@@ -1,7 +1,11 @@
 {
   "metadata": {
     "title": "Digitaliza y optimiza la gestión de llantas con IA",
-    "description": "Software que ahorra hasta un 30% en gastos de llantas mientras mejora la seguridad y sostenibilidad de tu flota"
+    "description": "Software que ahorra hasta un 30% en gastos de llantas mientras mejora la seguridad y sostenibilidad de tu flota",
+    "demo": {
+      "title": "Agenda tu demo",
+      "description": "Agenda una demostración de la solución de gestión de llantas de RueData"
+    }
   },
   "nav": {
     "solutions": "Soluciones",

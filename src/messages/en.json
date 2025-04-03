@@ -1,7 +1,11 @@
 {
   "metadata": {
     "title": "Ruedata - Tire Management with AI",
-    "description": "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability"
+    "description": "Software that saves up to 30% on tire expenses while improving fleet safety and sustainability",
+    "demo": {
+      "title": "Schedule Demo",
+      "description": "Schedule a demo of RueData's tire management solution"
+    }
   },
   "nav": {
     "solutions": "Solutions",

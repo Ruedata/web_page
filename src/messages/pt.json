@@ -1,7 +1,11 @@
 {
   "metadata": {
     "title": "Digitalize e otimize a gestão de pneus com IA",
-    "description": "Software que economiza até 30% nos gastos com pneus enquanto melhora a segurança e a sustentabilidade da frota"
+    "description": "Software que economiza até 30% nos gastos com pneus enquanto melhora a segurança e a sustentabilidade da frota",
+    "demo": {
+      "title": "Agende sua demonstração",
+      "description": "Agende uma demonstração da solução de gestão de pneus da RueData"
+    }
   },
   "nav": {
     "solutions": "Soluções",
