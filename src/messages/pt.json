@@ -103,6 +103,7 @@
   "form": {
     "title": "Agende sua demonstração",
     "name": "Nome*",
+    "namePlaceholder": "Seu nome",
     "lastname": "Sobrenome",
     "lastnamePlaceholder": "seu sobrenome",
     "email": "Email*",

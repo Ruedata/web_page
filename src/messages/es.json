@@ -104,6 +104,7 @@
     "title": "Agenda tu demo",
     "name": "Nombre*",
     "lastname": "Apellido",
+    "namePlaceholder": "Tu nombre",
     "lastnamePlaceholder": "tu apellido",
     "email": "Correo electrónico*",
     "emailPlaceholder": "tu@empresa.com",

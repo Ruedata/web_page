@@ -89,7 +89,7 @@ export default function ContactForm() {
                   value={formValues.firstName}
                   onChange={handleChange}
                   required
-                  placeholder="Tu nombre"
+                  placeholder={t('form.namePlaceholder')}
                 />
               </div>
 

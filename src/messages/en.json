@@ -103,8 +103,9 @@
   "form": {
     "title": "Schedule your Demo",
     "name": "Name*",
+    "namePlaceholder": "Your name",
     "lastname": "Lastname",
-    "lastnamePlaceholder": "your lastname",
+    "lastnamePlaceholder": "Your lastname",
     "email": "Email*",
     "emailPlaceholder": "you@company-name.com",
     "company": "Company name*",
