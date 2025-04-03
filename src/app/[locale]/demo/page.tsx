@@ -1,12 +1,12 @@
-import ContactForm from "@/components/Forms/contact-form"
 import type { Metadata } from "next"
+import ContactForm from "@/components/Forms/contact-form"
 
 export const metadata: Metadata = {
-  title: "RueData",
-  description: "Contact us for more information",
+  title: "RueData - Schedule Demo",
+  description: "Schedule a demo of RueData's tire management solution",
 }
 
-export default function ContactPage() {
+export default function DemoPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <main className="container mx-auto px-4 py-16">
