@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
-      {
-        source: '/:locale/about/',
-        destination: '/:locale/',
-        permanent: true,
-      },
+      // {
+      //   source: '/:locale/about/',
+      //   destination: '/:locale/',
+      //   permanent: true,
+      // },
       {
         source: '/:locale/contact/',
         destination: '/:locale/',
