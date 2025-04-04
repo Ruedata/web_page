@@ -41,12 +41,10 @@ export default function AboutPageClient() {
           <hr className="border-t-2 border-gray-200 mb-8 w-24 mx-auto" />
           
           <div className="prose prose-lg max-w-none text-gray-600">
-            <div className="leading-relaxed">
-              {t("mission")}
-              <br /><br />
-              {t("challenge")}
-              <br /><br />
-              {t("solution")}
+            <div className="space-y-6">
+              <p>{t("mission")}</p>
+              <p>{t("challenge")}</p>
+              <p>{t("solution")}</p>
             </div>
             
             <div className="text-center mt-12">
