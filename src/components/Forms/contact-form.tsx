@@ -11,7 +11,6 @@ import { Label } from "@/components/ui/label"
 import { toast } from "@/components/ui/use-toast"
 import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from 'next-intl'
-import { usePathname } from 'next/navigation'
 
 export default function ContactForm() {
   const t = useTranslations();
