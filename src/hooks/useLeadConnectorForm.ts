@@ -8,10 +8,10 @@ export function useLeadConnectorForm() {
   const locale = useLocale() as 'en' | 'es' | 'pt'
   const containerRef = useRef<HTMLDivElement>(null)
   const currentForm = formConfig[locale]
-  
+
   useEffect(() => {
     const existingScript = document.querySelector('script[src="https://link.msgsndr.com/js/form_embed.js"]')
-    
+
     if (!existingScript) {
       const script = document.createElement('script')
       script.src = "https://link.msgsndr.com/js/form_embed.js"
@@ -20,7 +20,7 @@ export function useLeadConnectorForm() {
         console.log("Lead Connector script loaded successfully")
       }
       document.body.appendChild(script)
-      
+
       return () => {
         if (script.parentNode) {
           document.body.removeChild(script)
@@ -28,11 +28,11 @@ export function useLeadConnectorForm() {
       }
     }
   }, [])
-  
+
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.innerHTML = ''
-      
+
       const iframe = document.createElement('iframe')
       iframe.src = currentForm.src
       iframe.id = currentForm.id
@@ -52,11 +52,11 @@ export function useLeadConnectorForm() {
       iframe.setAttribute('data-layout-iframe-id', currentForm.id)
       iframe.setAttribute('data-form-id', currentForm.formId)
       iframe.title = currentForm.formName
-      
+
       containerRef.current.appendChild(iframe)
     }
   }, [locale, currentForm])
-  
+
   return {
     containerRef,
     currentForm

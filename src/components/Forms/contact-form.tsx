@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { submitContactForm } from "@/actions/contact-form"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/input"
@@ -11,17 +11,11 @@ import { Label } from "@/components/ui/label"
 import { toast } from "@/components/ui/use-toast"
 import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from 'next-intl'
-import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import { useLeadConnectorForm } from '@/hooks/useLeadConnectorForm';
 
 export default function ContactForm() {
   const t = useTranslations();
-  const locale = useLocale() as 'en' | 'es' | 'pt';
-  const pathname = usePathname();
-  console.log("Current pathname:", pathname);
-  const isDemoPage = pathname.includes('/demo');
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formValues, setFormValues] = useState({
     firstName: "",
@@ -82,21 +76,6 @@ export default function ContactForm() {
     }
   }
 
-  if (isDemoPage) {
-    const { containerRef } = useLeadConnectorForm()
-    
-    return (
-      <>
-        <h1 className="text-4xl font-bold text-slate-800 text-center mb-12">{t('form.title')}</h1>
-        <Card className="shadow-lg">
-          <CardContent className="p-6">
-            <div ref={containerRef} className="h-[600px] md:h-[680px]"></div>
-          </CardContent>
-        </Card>
-      </>
-    )
-  }
-  
   return (
     <>
       <h1 className="text-4xl font-bold text-slate-800 text-center mb-12">{t('form.title')}</h1>
