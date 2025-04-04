@@ -127,5 +127,14 @@
     "vehicles": "Vehicles Inspected",
     "tires": "Tires Analyzed",
     "costSavings": "USD Saved"
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "We Keep You Rolling",
+    "description": "Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
+    "mission": "Ruedata was founded with a clear mission: to reduce unnecessary tire consumption and optimize fleet operations through data.",
+    "challenge": "Traditionally, fleets relied on manufacturer recommendations rather than real-world performance. We discovered that tire wear is influenced by multiple operational variables—not just brand or type. A key insight came from urban transit fleets, where exit-door tires wore out faster due to passenger weight distribution.",
+    "solution": "This led us to build an AI-powered platform that helps fleets make smarter decisions, maximize tire lifespan, reduce costs, and enhance road safety. Today, Ruedata partners with global leaders like Heineken, DHL, Bimbo, Cemex, and Coca-Cola bottlers, delivering measurable savings and sustainability.",
+    "tagline": "Smarter decisions. Safer roads. Stronger fleets."
   }
 }
