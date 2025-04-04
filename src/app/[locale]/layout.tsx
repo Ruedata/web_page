@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 import "../globals.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import type { Viewport } from "next"
+import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import {routing} from '@/i18n/routing'
@@ -11,26 +11,16 @@ import {getTranslations} from 'next-intl/server';
 
 const inter = Inter({ subsets: ["latin"] })
 
-export async function generateMetadata({params}: { params: { locale: string } }) {
-  const { locale } = await params;
-  const t = await getTranslations({locale, namespace: 'metadata'});
-
-  return {
-    title: t('title'),
-    description: t('description'),
-    // icons: {
-    //   icon: "/favicon.ico",
-    // },
-    alternates: {
-      canonical: "https://ruedata.com",
-      languages: {
-        'en': 'https://ruedata.com/en/',
-        'es': 'https://ruedata.com/es/',
-        'pt': 'https://ruedata.com/pt/'
-      }
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://ruedata.com",
+    languages: {
+      'en': 'https://ruedata.com/en/',
+      'es': 'https://ruedata.com/es/',
+      'pt': 'https://ruedata.com/pt/'
     }
-  };
-}
+  }
+};
 
 export const viewport: Viewport = {
   themeColor: "#0a2463",

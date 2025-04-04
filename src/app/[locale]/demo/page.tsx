@@ -1,7 +1,12 @@
+import type { Metadata } from 'next'
 import LeadConnectorForm from "@/components/Forms/LeadConnectorForm"
 import { getTranslations } from 'next-intl/server'
 
-export async function generateMetadata({ params }: { params: { locale: string } }) {
+type MetadataProps = {
+  params: Promise<{ locale: string }>
+}
+
+export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'metadata' })
 
