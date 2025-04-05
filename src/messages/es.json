@@ -127,5 +127,29 @@
     "tires": "Llantas Analizados",
     "vehicles": "Vehículos Inspeccionados",
     "costSavings": "USD Ahorrados"
+  },
+  "faq": {
+    "question1": "¿Qué es Ruedata?",
+    "answer1": "Ruedata es un software inteligente de administración de llantas para flotas con más de 100 vehículos. Utiliza algoritmos de inteligencia artificial para reducir costos, extender la vida útil de los neumáticos y mejorar la seguridad.",
+    "question2": "¿Qué beneficios ofrece Ruedata?",
+    "answer2": "Nuestro software permite ahorrar hasta un 30% en llantas, mejora el control y trazabilidad del mantenimiento, incrementa la seguridad de la flota y genera impacto ambiental positivo al reducir el desperdicio de neumáticos.",
+
+    "question3": "¿Dónde opera Ruedata?",
+    "answer3": "Operamos de forma digital en toda Latinoamérica y Estados Unidos. Tenemos presencia destacada en México, Colombia, Brasil, Chile y Perú. El servicio se implementa 100% en línea.",
+
+    "question4": "¿Cómo funciona el software?",
+    "answer4": "Ruedata recopila y analiza datos clave como presión, milimetraje, kilómetros y movimientos de llantas. Con esta información, genera alertas, reportes y un plan optimizado de mantenimiento para cada vehículo.",
+
+    "question5": "¿Cuáles son los requisitos para empezar?",
+    "answer5": "Solo necesitas compartir los datos básicos de tu flota (número de vehículos, tipo de llantas, historial de mantenimiento). Nuestro equipo te guía paso a paso en la implementación.",
+
+    "question6": "¿Ofrecen soporte y capacitación?",
+    "answer6": "Sí. Incluimos capacitación virtual para tu equipo, soporte técnico continuo y asesoría estratégica para que saques el mayor provecho del sistema.",
+
+    "question7": "¿Cómo se integran los datos al sistema?",
+    "answer7": "Podemos cargar información manualmente o integrarnos con tus sistemas existentes de mantenimiento, telemetría o ERP para automatizar el flujo de datos.",
+
+    "question8": "¿Qué diferencia a Ruedata de otros sistemas?",
+    "answer8": "Nuestra solución está basada en inteligencia artificial y optimización matemática, no solo en registros. Esto nos permite ofrecer recomendaciones precisas que generan ahorros reales."
   }
 }

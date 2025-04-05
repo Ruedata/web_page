@@ -127,5 +127,30 @@
     "vehicles": "Veículos inspeccionados",
     "tires": "Pneus analisados",
     "costSavings": "USD poupados"
+  },
+  "faq": {
+    "question1": "O que é a Ruedata?",
+    "answer1": "A Ruedata é um software inteligente de gestão de pneus para frotas com mais de 100 veículos. Utiliza algoritmos de inteligência artificial para reduzir custos, aumentar a vida útil dos pneus e melhorar a segurança.",
+
+    "question2": "Quais benefícios a Ruedata oferece?",
+    "answer2": "Nosso software permite economizar até 30% em pneus, melhora o controle e a rastreabilidade da manutenção, aumenta a segurança da frota e gera impacto ambiental positivo ao reduzir o desperdício de pneus.",
+
+    "question3": "Onde a Ruedata opera?",
+    "answer3": "Atuamos digitalmente em toda a América Latina e nos Estados Unidos, com presença destacada no México, Colômbia, Brasil, Chile e Peru. A implementação é feita 100% online.",
+
+    "question4": "Como funciona o software?",
+    "answer4": "A Ruedata coleta e analisa dados essenciais como pressão, sulco, quilometragem e movimentações dos pneus. Com essas informações, gera alertas, relatórios e um plano de manutenção otimizado para cada veículo.",
+
+    "question5": "Quais são os requisitos para começar?",
+    "answer5": "Você só precisa compartilhar os dados básicos da sua frota (número de veículos, tipos de pneus, histórico de manutenção). Nossa equipe te orienta passo a passo na implementação.",
+
+    "question6": "Vocês oferecem suporte e treinamento?",
+    "answer6": "Sim. Oferecemos treinamento virtual para sua equipe, suporte técnico contínuo e consultoria estratégica para que você aproveite ao máximo o sistema.",
+
+    "question7": "Como os dados são integrados ao sistema?",
+    "answer7": "Podemos carregar os dados manualmente ou integrar com seus sistemas existentes de manutenção, telemetria ou ERP para automatizar o fluxo de informações.",
+
+    "question8": "O que diferencia a Ruedata de outros sistemas?",
+    "answer8": "Nossa solução é baseada em inteligência artificial e otimização matemática, não apenas em registros. Isso nos permite oferecer recomendações precisas que geram economia real."
   }
 }

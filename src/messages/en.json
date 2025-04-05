@@ -127,5 +127,31 @@
     "vehicles": "Vehicles Inspected",
     "tires": "Tires Analyzed",
     "costSavings": "USD Saved"
+  },
+  "faq": {
+    "question1": "What is Ruedata?",
+    "answer1": "Ruedata is an smart tire management software for fleets with more than 100 vehicles. It uses AI (artificial intelligence) algorithms to reduce costs, extend tire lifespan, and improve safety.",
+
+    "question2": "What benefits does Ruedata offer?",
+    "answer2": "Our software helps save up to 30% on tires, improves maintenance control and traceability, increases fleet safety, and generates a positive environmental impact by reducing tire waste.",
+
+    "question3": "Where does Ruedata operate?",
+    "answer3": "We operate digitally across Latin America and the United States, with a strong presence in Mexico, Colombia, Brazil, Chile, and Peru. The service is implemented 100% online.",
+
+    "question4": "How does the software work?",
+    "answer4": "Ruedata collects and analyzes key data such as pressure, tread depth, mileage, and tire movements. Based on this data, it generates alerts, reports, and an optimized maintenance plan for each vehicle.",
+
+    "question5": "What are the requirements to get started?",
+    "answer5": "You just need to share your fleet's basic data (vehicle count, tire types, maintenance history). Our team will guide you step by step through the implementation.",
+
+    "question6": "Do you offer support and training?",
+    "answer6": "Yes. We provide virtual training for your team, continuous technical support, and strategic advice to help you get the most out of the system.",
+
+    "question7": "How is data integrated into the system?",
+    "answer7": "We can load data manually or integrate with your existing maintenance, telemetry, or ERP systems to automate data flow.",
+
+    "question8": "What sets Ruedata apart from other systems?",
+    "answer8": "Our solution is based on AI (artificial intelligence) and mathematical optimization, not just record-keeping. This allows us to provide accurate recommendations that drive real savings."
   }
+
 }
