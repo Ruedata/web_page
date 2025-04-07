@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Calendar, Clock, Search } from "lucide-react"
+import { ArrowRight, Calendar, Clock } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 
 export default function BlogPage() {
