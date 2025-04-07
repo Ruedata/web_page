@@ -68,16 +68,16 @@ export const features = [
 ];
 
 export const images: string[] = [
-  '/images/logos_mono/1.png',
-  '/images/logos_mono/2.png',
-  '/images/logos_mono/3.png',
-  '/images/logos_mono/4.png',
-  '/images/logos_mono/5.png',
-  '/images/logos_mono/6.png',
-  '/images/logos_mono/7.png',
-  '/images/logos_mono/8.png',
-  '/images/logos_mono/9.png',
-  '/images/logos_mono/10.png',
+  '/images/logos/bimbo.png',
+  '/images/logos/brinks.png',
+  '/images/logos/cemex.png',
+  '/images/logos/greenmovil.png',
+  '/images/logos/heineken.png',
+  '/images/logos/jbs.png',
+  '/images/logos/solar-coca-cola.png',
+  '/images/logos/transdev.png',
+  '/images/logos/traxion.png',
+  '/images/logos/veolia.png',
 ];
 
 export const partnersImages = [

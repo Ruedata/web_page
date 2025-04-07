@@ -7,6 +7,41 @@
       "description": "Agende uma demonstração da solução de gestão de pneus da RueData"
     }
   },
+  "about": {
+    "title": "Sobre a Ruedata",
+    "subtitle": "Otimizando operações de frotas com gestão de pneus orientada por dados",
+    "mission": {
+      "title": "Nossa Missão",
+      "text1": "A Ruedata foi fundada com uma missão clara: reduzir o consumo desnecessário de pneus e otimizar as operações de frotas por meio de dados.",
+      "text2": "Tradicionalmente, as frotas se baseavam nas recomendações dos fabricantes em vez do desempenho real. Descobrimos que o desgaste dos pneus é influenciado por diversas variáveis operacionais — não apenas pela marca ou tipo. Um insight fundamental veio das frotas de transporte urbano, onde os pneus das portas de saída se desgastavam mais rapidamente devido à distribuição do peso dos passageiros.",
+      "text3": "Isso nos levou a criar uma plataforma com inteligência artificial que ajuda as frotas a tomar decisões mais inteligentes, aumentar a vida útil dos pneus, reduzir custos e melhorar a segurança nas estradas. Hoje, a Ruedata é parceira de líderes globais como Heineken, Bimbo, Cemex e engarrafadoras da Coca-Cola, entregando economia mensurável e sustentabilidade."
+    },
+    "impact": {
+      "title": "Nosso Impacto",
+      "subtitle": "Resultados mensuráveis para operações de frotas em todo o mundo",
+      "cost": {
+        "title": "Redução de Custos",
+        "text": "Otimize o uso e a manutenção dos pneus para reduzir significativamente os custos operacionais"
+      },
+      "sustainability": {
+        "title": "Sustentabilidade",
+        "text": "Reduza o consumo desnecessário de pneus e minimize o impacto ambiental"
+      },
+      "safety": {
+        "title": "Segurança",
+        "text": "Melhore a segurança nas estradas com gestão e manutenção de pneus orientadas por dados"
+      }
+    },
+    "partners": {
+      "title": "Nossos Parceiros",
+      "subtitle": "Confiado por líderes da indústria em todo o mundo"
+    },
+    "cta": {
+      "title": "Pronto para otimizar sua frota?",
+      "text": "Junte-se aos líderes da indústria que confiam na Ruedata para reduzir custos, melhorar a sustentabilidade e aumentar a segurança.",
+      "button": "Começar agora"
+    }
+  },
   "nav": {
     "solutions": "Soluções",
     "about": "Sobre nós",

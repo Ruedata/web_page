@@ -7,6 +7,41 @@
       "description": "Agenda una demostración de la solución de gestión de llantas de RueData"
     }
   },
+  "about": {
+    "title": "Acerca de Ruedata",
+    "subtitle": "Optimizamos la operación de flotas con gestión de llantas basada en datos",
+    "mission": {
+      "title": "Nuestra misión",
+      "text1": "Ruedata nació con una misión clara: reducir el consumo innecesario de llantas y optimizar la operación de flotas mediante datos.",
+      "text2": "Tradicionalmente, las flotas se basaban en las recomendaciones del fabricante en lugar del desempeño real. Descubrimos que el desgaste de las llantas está influenciado por múltiples variables operativas, no solo por la marca o el tipo. Un hallazgo clave vino de flotas de transporte urbano, donde las llantas en las puertas de salida se desgastaban más rápido debido a la distribución del peso de los pasajeros.",
+      "text3": "Esto nos llevó a construir una plataforma con inteligencia artificial que ayuda a las flotas a tomar decisiones más inteligentes, maximizar la vida útil de las llantas, reducir costos y mejorar la seguridad vial. Hoy, Ruedata colabora con líderes globales como Heineken, Bimbo, Cemex y embotelladoras de Coca-Cola, generando ahorros medibles y sostenibilidad."
+    },
+    "impact": {
+      "title": "Nuestro impacto",
+      "subtitle": "Resultados medibles para operaciones de flotas en todo el mundo",
+      "cost": {
+        "title": "Reducción de costos",
+        "text": "Optimiza el uso y mantenimiento de llantas para reducir significativamente los costos operativos"
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "text": "Reduce el consumo innecesario de llantas y minimiza el impacto ambiental"
+      },
+      "safety": {
+        "title": "Seguridad",
+        "text": "Mejora la seguridad vial con gestión y mantenimiento de llantas basados en datos"
+      }
+    },
+    "partners": {
+      "title": "Nuestros aliados",
+      "subtitle": "Confiado por líderes de la industria a nivel global"
+    },
+    "cta": {
+      "title": "¿Listo para optimizar tu flota?",
+      "text": "Únete a los líderes que confían en Ruedata para reducir costos, mejorar la sostenibilidad y aumentar la seguridad.",
+      "button": "Comenzar ahora"
+    }
+  },
   "nav": {
     "solutions": "Soluciones",
     "about": "Sobre nosotros",

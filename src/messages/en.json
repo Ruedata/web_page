@@ -7,6 +7,41 @@
       "description": "Schedule a demo of RueData's tire management solution"
     }
   },
+ "about": {
+    "title": "About Ruedata",
+    "subtitle": "Optimizing fleet operations through data-driven tire management",
+    "mission": {
+      "title": "Our Mission",
+      "text1": "Ruedata was founded with a clear mission: to reduce unnecessary tire consumption and optimize fleet operations through data.",
+      "text2": "Traditionally, fleets relied on manufacturer recommendations rather than real-world performance. We discovered that tire wear is influenced by multiple operational variables—not just brand or type. A key insight came from urban transit fleets, where exit-door tires wore out faster due to passenger weight distribution.",
+      "text3": "This led us to build an AI-powered platform that helps fleets make smarter decisions, maximize tire lifespan, reduce costs, and enhance road safety. Today, Ruedata partners with global leaders like Heineken, Bimbo, Cemex, and Coca-Cola bottlers, delivering measurable savings and sustainability."
+    },
+    "impact": {
+      "title": "Our Impact",
+      "subtitle": "Delivering measurable results for fleet operations worldwide",
+      "cost": {
+        "title": "Cost Reduction",
+        "text": "Optimize tire usage and maintenance to significantly reduce operational costs"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "text": "Reduce unnecessary tire consumption and minimize environmental impact"
+      },
+      "safety": {
+        "title": "Safety",
+        "text": "Enhance road safety through data-driven tire management and maintenance"
+      }
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Trusted by industry leaders worldwide"
+    },
+    "cta": {
+      "title": "Ready to optimize your fleet?",
+      "text": "Join industry leaders who trust Ruedata to reduce costs, improve sustainability, and enhance safety.",
+      "button": "Get Started"
+    }
+  },
   "nav": {
     "solutions": "Solutions",
     "about": "About us",
