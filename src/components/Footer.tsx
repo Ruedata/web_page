@@ -38,26 +38,26 @@ export default function Footer() {
               </li>
             </ul>
           </div> */}
-          {/* <div>
+          <div>
             <h3 className="mb-4 text-lg font-medium">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white">
-                  About Us
+                <Link href="/about/" className="text-gray-300 hover:text-white">
+                 {t('nav.about')}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/case-studies" className="text-gray-300 hover:text-white">
                   Case Studies
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white">
-                  Contact
+                <Link href="/blog/" className="text-gray-300 hover:text-white">
+                  {t('footer.blog')}
                 </Link>
               </li>
             </ul>
-          </div> */}
+          </div>
           <div>
             <h3 className="mb-4 text-lg font-medium">Contact</h3>
             <ul className="space-y-2 text-sm">
