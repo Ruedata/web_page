@@ -15,7 +15,7 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-primary/10">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-navy-blue">
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
               <div>
                 <Image
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32 bg-sky-50">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-navy-blue">
@@ -110,7 +110,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter text-navy-blue">
@@ -163,7 +163,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto">
             <div className="grid gap-10 lg:grid-cols-2 items-center">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter text-navy-blue">
