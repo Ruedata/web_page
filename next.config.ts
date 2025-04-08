@@ -32,6 +32,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/:path*.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/:locale/calculadora/',
         destination: '/:locale/',
         permanent: true,
