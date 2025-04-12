@@ -69,48 +69,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-4">{t("about.team.title")}</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">{t("about.team.description")}</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            {/* Team Member 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-64 w-full">
-                <Image
-                  src="/images/sebastian.jpg"
-                  alt={t("about.team.sebastian.name")}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-navy-blue">{t("about.team.sebastian.name")}</h3>
-                <p className="text-gray-600">{t("about.team.sebastian.position")}</p>
-              </div>
-            </div>
-            
-            {/* Team Member 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-64 w-full">
-                <Image
-                  src="/images/jorge.jpg"
-                  alt={t("about.team.jorge.name")}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-navy-blue">{t("about.team.jorge.name")}</h3>
-                <p className="text-gray-600">{t("about.team.jorge.position")}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   )
 }
