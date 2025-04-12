@@ -12,7 +12,8 @@
     "about": "About us",
     "case-studies": "Case Studies",
     "login": "Login",
-    "get-started": "Get Started"
+    "get-started": "Get Started",
+    "phone": "+1 334-373-2288"
   },
   "hero": {
     "title": "Digitalize and optimize tire management with AI",
@@ -82,7 +83,7 @@
     "title": "Backed by"
   },
   "case": {
-    "studies": "Case Studies",
+    "studies": "Success stories",
     "cemex": {
       "title": "CEMEX MEXICO",
       "description": "By centralizing tire data and optimizing maintenance, we’ve improved operational efficiency, enhanced traceability, and reduced tire-related costs across Cemex’s supply chain."
@@ -152,6 +153,84 @@
 
     "question8": "What sets Ruedata apart from other systems?",
     "answer8": "Our solution is based on AI (artificial intelligence) and mathematical optimization, not just record-keeping. This allows us to provide accurate recommendations that drive real savings."
+  },
+
+  "about": {
+    "title": "About Ruedata",
+    "description": "Ruedata merges tire management software, AI, and operational excellence to help fleets reduce costs and improve performance.",
+    "hero": {
+      "title": "We keep you rolling",
+      "description": "Ruedata is a Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
+      "contactButton": "Contact us"
+    },
+    "vision": {
+      "title": "From insight to impact: Ruedata's mission to optimize tire usage",
+      "description": {
+        "paragraph1": "Ruedata was founded with a clear mission: to reduce unnecessary tire consumption and optimize fleet operations through data.",
+        "paragraph2": "Traditionally, fleets relied on manufacturer recommendations rather than real-world performance. We discovered that tire wear is influenced by multiple operational variables—not just brand or type. A key insight came from urban transit fleets, where exit-door tires wore out faster due to passenger weight distribution.",
+        "paragraph3": "This led us to build an AI-powered platform that helps fleets make smarter decisions, maximize tire lifespan, reduce costs, and enhance road safety. Today, Ruedata partners with global leaders like Heineken, DHL, Bimbo, Cemex, and Coca-Cola bottlers, delivering measurable savings and sustainability."
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "description": "Our team brings together expertise in artificial intelligence, transportation, and business optimization to deliver exceptional value to our clients.",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-founder & CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-founder & CTO"
+      }
+    }
+  },
+
+  "caseStudies": {
+    "hero": {
+      "title": "Real Success Stories",
+      "subtitle": "Savings & Safety for Transportation Fleets"
+    },
+    "requestDemo": "Request a Demo",
+    "construction": {
+      "title": "Construction Company",
+      "description": "A leading construction company faced increasing pressure to optimize fleet operations and reduce tire-related expenses. this is what Ruedata can do:",
+      "bulletTitle1": "Fleet size:",
+      "bulletTitle2": "Estimated yearly tire cost:",
+      "bulletTitle3": "Potential savings:",
+      "bullet1": "15K trucks",
+      "bullet2": "$39M",
+      "bullet3": "$1.2M"
+    },
+    "dairy": {
+      "title": "Dairy Products Company",
+      "description": "This dairy company operates a fleet of refrigerated trucks across multiple states. With Ruedata, they were able to reduce tire-related roadside incidents by 40% and extend tire life significantly.",
+      "bulletTitle1": "Fleet size:",
+      "bulletTitle2": "Estimated yearly tire cost:",
+      "bulletTitle3": "Potential savings:",
+      "bullet1": "1.5K trucks",
+      "bullet2": "$4M",
+      "bullet3": "$800K"
+    },
+    "metrics": {
+      "savings": "Cost Savings",
+      "roi": "Return on Investment"
+    },
+    "additional": {
+      "title": "More Success Stories",
+      "description": "See how companies across various industries have benefited from our tire management solution",
+      "case1": {
+        "title": "Logistics Provider",
+        "description": "National logistics company with 500+ trucks"
+      },
+      "case2": {
+        "title": "Beverage Distributor",
+        "description": "Regional distributor with 150 delivery vehicles"
+      },
+      "case3": {
+        "title": "Waste Management",
+        "description": "Urban waste management fleet with 80 heavy vehicles"
+      }
+    }
   }
 
 }

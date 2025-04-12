@@ -7,17 +7,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:locale/about/',
-        destination: '/:locale/',
-        permanent: true,
-      },
-      {
         source: '/:locale/contact/',
         destination: '/:locale/',
         permanent: true,
       },
       {
         source: '/:locale/blog',
+        destination: '/:locale/',
+        permanent: true,
+      },
+      {
+        source: '/:locale/case-studies/',
         destination: '/:locale/',
         permanent: true,
       },
