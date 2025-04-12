@@ -156,19 +156,20 @@
   
   "about": {
     "hero": {
-      "title": "Sobre Nós",
-      "subtitle": "Estamos transformando a gestão de pneus para frotas de transporte em todo o mundo"
+      "title": "Mantemos Você Rodando",
+      "description": "Ruedata é uma empresa com sede em Chattanooga moldando o futuro da mobilidade para a indústria de frete e logística",
+      "contactButton": "Contate-nos"
     },
     "mission": {
       "title": "Nossa Missão",
-      "description": "A missão da Ruedata é transformar a indústria de transporte reduzindo o consumo de pneus e maximizando a rentabilidade das frotas por meio de soluções inteligentes baseadas em dados."
-    },
-    "vision": {
-      "title": "Nossa Visão",
-      "description": "Ser o líder global em gestão de pneus com IA, ajudando empresas de transporte a economizar custos enquanto melhoram a segurança e a sustentabilidade."
+      "description": "A missão da Ruedata é transformar a indústria de transporte reduzindo o consumo de pneus e maximizando a rentabilidade das frotas por meio de soluções inteligentes baseadas em dados.",
+      "point1": "Reduzir o consumo de pneus em até 30%",
+      "point2": "Melhorar a segurança da frota através de manutenção proativa",
+      "point3": "Otimizar operações com insights baseados em dados"
     },
     "team": {
-      "title": "Nossa Equipe",
+      "title": "Conheça Nossa Equipe",
+      "description": "Nossa equipe reúne expertise em inteligência artificial, transporte e otimização de negócios para oferecer valor excepcional aos nossos clientes.",
       "sebastian": {
         "name": "Sebastian Baquero",
         "position": "Co-fundador e CEO"
@@ -182,12 +183,37 @@
   
   "caseStudies": {
     "hero": {
-      "title": "Casos de Sucesso",
-      "subtitle": "Saiba como frotas de transporte em todo o mundo estão economizando custos e melhorando a segurança com a Ruedata"
+      "title": "Histórias Reais de Sucesso",
+      "subtitle": "Economia e Segurança para Frotas de Transporte"
     },
-    "companies": {
-      "title": "Empresas que Confiam em Nós",
-      "description": "Veja como esses líderes do setor transformaram sua gestão de pneus com a Ruedata"
+    "requestDemo": "Solicitar uma Demonstração",
+    "construction": {
+      "title": "Empresa de Construção",
+      "description": "Uma grande empresa de construção com mais de 200 veículos alcançou economias significativas de custos e melhorou a eficiência operacional ao implementar a solução de gestão de pneus da Ruedata."
+    },
+    "dairy": {
+      "title": "Empresa de Laticínios",
+      "description": "Esta empresa de laticínios opera uma frota de caminhões refrigerados em vários estados. Com a Ruedata, eles conseguiram reduzir os incidentes rodoviários relacionados a pneus em 40% e estender significativamente a vida útil dos pneus."
+    },
+    "metrics": {
+      "savings": "Economia de Custos",
+      "roi": "Retorno sobre Investimento"
+    },
+    "additional": {
+      "title": "Mais Casos de Sucesso",
+      "description": "Veja como empresas de diversos setores se beneficiaram da nossa solução de gestão de pneus",
+      "case1": {
+        "title": "Provedor de Logística",
+        "description": "Empresa nacional de logística com mais de 500 caminhões"
+      },
+      "case2": {
+        "title": "Distribuidor de Bebidas",
+        "description": "Distribuidor regional com 150 veículos de entrega"
+      },
+      "case3": {
+        "title": "Gestão de Resíduos",
+        "description": "Frota urbana de gestão de resíduos com 80 veículos pesados"
+      }
     }
   }
 }

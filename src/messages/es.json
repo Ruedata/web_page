@@ -155,19 +155,20 @@
   
   "about": {
     "hero": {
-      "title": "Sobre Nosotros",
-      "subtitle": "Estamos transformando la gestión de llantas para flotas de transporte en todo el mundo"
+      "title": "Te Mantenemos Rodando",
+      "description": "Ruedata es una empresa con sede en Chattanooga que está dando forma al futuro de la movilidad para la industria de carga y logística",
+      "contactButton": "Contáctanos"
     },
     "mission": {
       "title": "Nuestra Misión",
-      "description": "La misión de Ruedata es transformar la industria del transporte reduciendo el consumo de llantas y maximizando la rentabilidad de las flotas mediante soluciones inteligentes basadas en datos."
-    },
-    "vision": {
-      "title": "Nuestra Visión",
-      "description": "Ser el líder mundial en gestión de llantas con IA, ayudando a las empresas de transporte a ahorrar costos mientras mejoran la seguridad y la sostenibilidad."
+      "description": "La misión de Ruedata es transformar la industria del transporte reduciendo el consumo de llantas y maximizando la rentabilidad de las flotas mediante soluciones inteligentes basadas en datos.",
+      "point1": "Reducir el consumo de llantas hasta un 30%",
+      "point2": "Mejorar la seguridad de la flota mediante mantenimiento proactivo",
+      "point3": "Optimizar operaciones con información basada en datos"
     },
     "team": {
-      "title": "Nuestro Equipo",
+      "title": "Conoce a Nuestro Equipo",
+      "description": "Nuestro equipo reúne experiencia en inteligencia artificial, transporte y optimización de negocios para ofrecer un valor excepcional a nuestros clientes.",
       "sebastian": {
         "name": "Sebastian Baquero",
         "position": "Co-fundador y CEO"
@@ -181,12 +182,37 @@
   
   "caseStudies": {
     "hero": {
-      "title": "Casos de Éxito",
-      "subtitle": "Descubre cómo las flotas de transporte en todo el mundo están ahorrando costos y mejorando la seguridad con Ruedata"
+      "title": "Historias Reales de Éxito",
+      "subtitle": "Ahorro y Seguridad para Flotas de Transporte"
     },
-    "companies": {
-      "title": "Empresas que Confían en Nosotros",
-      "description": "Conoce cómo estos líderes de la industria han transformado su gestión de llantas con Ruedata"
+    "requestDemo": "Solicitar una Demo",
+    "construction": {
+      "title": "Empresa de Construcción",
+      "description": "Una importante empresa de construcción con más de 200 vehículos logró ahorros significativos de costos y mejoró la eficiencia operativa al implementar la solución de gestión de llantas de Ruedata."
+    },
+    "dairy": {
+      "title": "Empresa de Productos Lácteos",
+      "description": "Esta empresa láctea opera una flota de camiones refrigerados en varios estados. Con Ruedata, pudieron reducir los incidentes en carretera relacionados con llantas en un 40% y extender significativamente la vida útil de las llantas."
+    },
+    "metrics": {
+      "savings": "Ahorro de Costos",
+      "roi": "Retorno de Inversión"
+    },
+    "additional": {
+      "title": "Más Casos de Éxito",
+      "description": "Descubre cómo empresas de diversas industrias se han beneficiado de nuestra solución de gestión de llantas",
+      "case1": {
+        "title": "Proveedor de Logística",
+        "description": "Empresa nacional de logística con más de 500 camiones"
+      },
+      "case2": {
+        "title": "Distribuidor de Bebidas",
+        "description": "Distribuidor regional con 150 vehículos de reparto"
+      },
+      "case3": {
+        "title": "Gestión de Residuos",
+        "description": "Flota urbana de gestión de residuos con 80 vehículos pesados"
+      }
     }
   }
 }

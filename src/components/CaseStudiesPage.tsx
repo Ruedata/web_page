@@ -3,10 +3,8 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import Image from "next/image"
-import Hero from "./Hero"
 import { Link } from '@/i18n/navigation'
 import { Button } from "./ui/Button"
-import { carouselItems } from "../data/features"
 
 export function CaseStudiesPage() {
   const t = useTranslations()
@@ -14,39 +12,126 @@ export function CaseStudiesPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <Hero
-        title="caseStudies.hero.title"
-        subtitle="caseStudies.hero.subtitle"
-        image="/images/case-studies-hero.jpg"
-      />
+      <section className="relative overflow-hidden bg-navy-blue">
+        <div className="absolute top-0 right-0 w-1/2 h-full">
+          <div className="absolute top-0 left-0 w-full h-full bg-navy-blue opacity-20 rounded-bl-[200px]"></div>
+        </div>
+        <div className="container px-4 w-full py-16 mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-white z-10 relative">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6">
+              {t("caseStudies.hero.title")}
+            </h1>
+            <p className="text-lg sm:text-xl mb-8">
+              {t("caseStudies.hero.subtitle")}
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Case Studies Section */}
-      <section className="w-full py-12 md:py-16">
+      {/* Case Study 1 */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-8 text-center">{t("caseStudies.companies.title")}</h2>
-          <p className="text-gray-600 text-lg/relaxed text-center max-w-3xl mx-auto mb-12">{t("caseStudies.companies.description")}</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Case Study Cards - using the existing carousel items data */}
-            {carouselItems.map((study, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden">
-                <div className="relative h-64 w-full">
-                  <Image
-                    src={study.image}
-                    alt={t(study.title)}
-                    fill
-                    className="object-cover"
-                  />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-6">{t("caseStudies.construction.title")}</h2>
+              <p className="text-gray-600 text-lg mb-8">{t("caseStudies.construction.description")}</p>
+              
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <h3 className="text-3xl font-bold text-navy-blue mb-2">30%</h3>
+                  <p className="text-gray-600">{t("caseStudies.metrics.savings")}</p>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-navy-blue mb-2">{t(study.title)}</h3>
-                  <p className="text-gray-600 mb-4">{t(study.description)}</p>
-                  <Link href="/demo/">
-                    <Button className="bg-primary text-white">{t("nav.get-started")}</Button>
-                  </Link>
+                <div className="bg-gray-100 p-6 rounded-lg">
+                  <h3 className="text-3xl font-bold text-navy-blue mb-2">4x</h3>
+                  <p className="text-gray-600">{t("caseStudies.metrics.roi")}</p>
                 </div>
               </div>
-            ))}
+              
+              <Link href="/demo/">
+                <Button className="bg-primary hover:bg-primary-dark text-white">
+                  {t("caseStudies.requestDemo")}
+                </Button>
+              </Link>
+            </div>
+            <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] order-1 lg:order-2">
+              <Image
+                src="/images/case-study-construction.jpg"
+                alt="Construction company case study"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study 2 */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[300px] sm:h-[400px] lg:h-[500px]">
+              <Image
+                src="/images/case-study-dairy.jpg"
+                alt="Dairy company case study"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-6">{t("caseStudies.dairy.title")}</h2>
+              <p className="text-gray-600 text-lg mb-8">{t("caseStudies.dairy.description")}</p>
+              
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-3xl font-bold text-navy-blue mb-2">25%</h3>
+                  <p className="text-gray-600">{t("caseStudies.metrics.savings")}</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-3xl font-bold text-navy-blue mb-2">3x</h3>
+                  <p className="text-gray-600">{t("caseStudies.metrics.roi")}</p>
+                </div>
+              </div>
+              
+              <Link href="/demo/">
+                <Button className="bg-primary hover:bg-primary-dark text-white">
+                  {t("caseStudies.requestDemo")}
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Cases Summary */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-6">{t("caseStudies.additional.title")}</h2>
+          <p className="text-gray-600 text-lg mb-12 max-w-3xl mx-auto">{t("caseStudies.additional.description")}</p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Case 1 */}
+            <div className="bg-gray-100 p-8 rounded-lg">
+              <h3 className="text-xl font-bold text-navy-blue mb-4">{t("caseStudies.additional.case1.title")}</h3>
+              <p className="text-gray-600 mb-4">{t("caseStudies.additional.case1.description")}</p>
+              <div className="text-2xl font-bold text-primary">20%</div>
+              <div className="text-gray-600">{t("caseStudies.metrics.savings")}</div>
+            </div>
+            
+            {/* Case 2 */}
+            <div className="bg-gray-100 p-8 rounded-lg">
+              <h3 className="text-xl font-bold text-navy-blue mb-4">{t("caseStudies.additional.case2.title")}</h3>
+              <p className="text-gray-600 mb-4">{t("caseStudies.additional.case2.description")}</p>
+              <div className="text-2xl font-bold text-primary">35%</div>
+              <div className="text-gray-600">{t("caseStudies.metrics.savings")}</div>
+            </div>
+            
+            {/* Case 3 */}
+            <div className="bg-gray-100 p-8 rounded-lg">
+              <h3 className="text-xl font-bold text-navy-blue mb-4">{t("caseStudies.additional.case3.title")}</h3>
+              <p className="text-gray-600 mb-4">{t("caseStudies.additional.case3.description")}</p>
+              <div className="text-2xl font-bold text-primary">28%</div>
+              <div className="text-gray-600">{t("caseStudies.metrics.savings")}</div>
+            </div>
           </div>
         </div>
       </section>

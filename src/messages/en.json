@@ -156,19 +156,20 @@
   
   "about": {
     "hero": {
-      "title": "About Us",
-      "subtitle": "We're transforming tire management for transportation fleets worldwide"
+      "title": "We Keep You Rolling",
+      "description": "Ruedata is a Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
+      "contactButton": "Contact us"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "Ruedata's mission is to transform the transportation industry by reducing tire consumption and maximizing fleet profitability through intelligent data-driven solutions."
-    },
-    "vision": {
-      "title": "Our Vision",
-      "description": "To be the global leader in AI-powered tire management, helping transportation companies save costs while improving safety and sustainability."
+      "description": "Ruedata's mission is to transform the transportation industry by reducing tire consumption and maximizing fleet profitability through intelligent data-driven solutions.",
+      "point1": "Reduce tire consumption by up to 30%",
+      "point2": "Improve fleet safety through proactive maintenance",
+      "point3": "Optimize operations with data-driven insights"
     },
     "team": {
-      "title": "Our Team",
+      "title": "Meet Our Team",
+      "description": "Our team brings together expertise in artificial intelligence, transportation, and business optimization to deliver exceptional value to our clients.",
       "sebastian": {
         "name": "Sebastian Baquero",
         "position": "Co-founder & CEO"
@@ -182,12 +183,37 @@
   
   "caseStudies": {
     "hero": {
-      "title": "Case Studies",
-      "subtitle": "Learn how transportation fleets worldwide are saving costs and improving safety with Ruedata"
+      "title": "Real Success Stories",
+      "subtitle": "Savings & Safety for Transportation Fleets"
     },
-    "companies": {
-      "title": "Trusted by Leading Companies",
-      "description": "See how these industry leaders have transformed their tire management with Ruedata"
+    "requestDemo": "Request a Demo",
+    "construction": {
+      "title": "Construction Company",
+      "description": "A major construction company with over 200 vehicles achieved significant cost savings and improved operational efficiency by implementing Ruedata's tire management solution."
+    },
+    "dairy": {
+      "title": "Dairy Products Company",
+      "description": "This dairy company operates a fleet of refrigerated trucks across multiple states. With Ruedata, they were able to reduce tire-related roadside incidents by 40% and extend tire life significantly."
+    },
+    "metrics": {
+      "savings": "Cost Savings",
+      "roi": "Return on Investment"
+    },
+    "additional": {
+      "title": "More Success Stories",
+      "description": "See how companies across various industries have benefited from our tire management solution",
+      "case1": {
+        "title": "Logistics Provider",
+        "description": "National logistics company with 500+ trucks"
+      },
+      "case2": {
+        "title": "Beverage Distributor",
+        "description": "Regional distributor with 150 delivery vehicles"
+      },
+      "case3": {
+        "title": "Waste Management",
+        "description": "Urban waste management fleet with 80 heavy vehicles"
+      }
     }
   }
 
