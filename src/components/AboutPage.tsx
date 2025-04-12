@@ -34,17 +34,17 @@ export function AboutPage() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] lg:h-full">
             <Image
-              src="/images/about-hero.jpg"
+              src="/images/home/jefe.jpg"
               alt="Ruedata team"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover rounded-2xl"
               priority
             />
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Vision Section */}
       <section className="relative overflow-hidden py-16">
         <div className="absolute bottom-0 left-0 w-1/3 h-3/4">
           <div className="absolute top-0 right-0 w-full h-full bg-navy-blue opacity-10 rounded-tr-[150px]"></div>
@@ -53,20 +53,17 @@ export function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[300px] sm:h-[400px] lg:h-[500px]">
               <Image
-                src="/images/about-mission.jpg"
-                alt="Our mission"
+                src="/images/truck-drives-fast-highway-bright-sun-with-sunbeams-blue-sky (1).jpg"
+                alt="Our vision"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
             <div className="z-10">
-              <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-6">{t("about.mission.title")}</h2>
-              <p className="text-gray-600 text-lg mb-6">{t("about.mission.description")}</p>
-              <ul className="list-disc pl-5 text-gray-600 text-lg space-y-2">
-                <li>{t("about.mission.point1")}</li>
-                <li>{t("about.mission.point2")}</li>
-                <li>{t("about.mission.point3")}</li>
-              </ul>
+              <h2 className="text-2xl sm:text-4xl font-bold text-navy-blue mb-6">{t("about.vision.title")}</h2>
+              <p className="text-gray-600 text-lg mb-4">{t("about.vision.description.paragraph1")}</p>
+              <p className="text-gray-600 text-lg mb-4">{t("about.vision.description.paragraph2")}</p>
+              <p className="text-gray-600 text-lg mb-4">{t("about.vision.description.paragraph3")}</p>
             </div>
           </div>
         </div>

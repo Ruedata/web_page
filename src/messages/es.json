@@ -159,12 +159,13 @@
       "description": "Ruedata es una empresa con sede en Chattanooga que está dando forma al futuro de la movilidad para la industria de carga y logística",
       "contactButton": "Contáctanos"
     },
-    "mission": {
-      "title": "Nuestra Misión",
-      "description": "La misión de Ruedata es transformar la industria del transporte reduciendo el consumo de llantas y maximizando la rentabilidad de las flotas mediante soluciones inteligentes basadas en datos.",
-      "point1": "Reducir el consumo de llantas hasta un 30%",
-      "point2": "Mejorar la seguridad de la flota mediante mantenimiento proactivo",
-      "point3": "Optimizar operaciones con información basada en datos"
+    "vision": {
+      "title": "De la Percepción al Impacto: La Misión de Ruedata para Optimizar el Uso de Llantas",
+      "description": {
+        "paragraph1": "Ruedata fue fundada con una misión clara: reducir el consumo innecesario de llantas y optimizar las operaciones de flota a través de datos.",
+        "paragraph2": "Tradicionalmente, las flotas dependían de las recomendaciones del fabricante en lugar del rendimiento en el mundo real. Descubrimos que el desgaste de las llantas está influenciado por múltiples variables operativas, no solo por la marca o el tipo. Una observación clave provino de las flotas de tránsito urbano, donde las llantas de la puerta de salida se desgastaban más rápido debido a la distribución del peso de los pasajeros.",
+        "paragraph3": "Esto nos llevó a construir una plataforma impulsada por IA que ayuda a las flotas a tomar decisiones más inteligentes, maximizar la vida útil de las llantas, reducir costos y mejorar la seguridad vial. Hoy, Ruedata se asocia con líderes globales como Heineken, DHL, Bimbo, Cemex y embotelladores de Coca-Cola, brindando ahorros y sostenibilidad medibles."
+      }
     },
     "team": {
       "title": "Conoce a Nuestro Equipo",
