@@ -40,6 +40,15 @@ const Header = () => {
           <Link href="/demo/">
             <Button className="primary text-white">{t("nav.get-started")}</Button>
           </Link>
+
+        <nav className="hidden md:flex items-center gap-4 mr-4">
+          <Link href="/about/" className="text-navy-blue hover:text-blue-700 font-medium">
+            {t("nav.about")}
+          </Link>
+          <Link href="/case-studies/" className="text-navy-blue hover:text-blue-700 font-medium">
+            {t("nav.case-studies")}
+          </Link>
+        </nav>
         </div>
 
         {/* Mobile menu button */}
@@ -67,13 +76,13 @@ const Header = () => {
           <nav className="flex flex-col space-y-4">
             {/* <Link href="/solutions" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.solutions")}
-            </Link>
-            <Link href="/about" className="text-navy-blue hover:text-blue-700 font-medium">
+            </Link> */}
+            <Link href="/about/" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.about")}
             </Link>
-            <Link href="/case-studies" className="text-navy-blue hover:text-blue-700 font-medium">
+            <Link href="/case-studies/" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.case-studies")}
-            </Link> */}
+            </Link>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-navy-blue" />
               <span className="text-sm text-navy-blue">+1 334-373-2288</span>

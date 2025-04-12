@@ -6,11 +6,13 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      /* Remove this redirect to allow the about page to be created
       {
         source: '/:locale/about/',
         destination: '/:locale/',
         permanent: true,
       },
+      */
       {
         source: '/:locale/contact/',
         destination: '/:locale/',

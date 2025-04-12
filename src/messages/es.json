@@ -151,5 +151,42 @@
 
     "question8": "¿Qué diferencia a Ruedata de otros sistemas?",
     "answer8": "Nuestra solución está basada en inteligencia artificial y optimización matemática, no solo en registros. Esto nos permite ofrecer recomendaciones precisas que generan ahorros reales."
+  },
+  
+  "about": {
+    "hero": {
+      "title": "Sobre Nosotros",
+      "subtitle": "Estamos transformando la gestión de llantas para flotas de transporte en todo el mundo"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "La misión de Ruedata es transformar la industria del transporte reduciendo el consumo de llantas y maximizando la rentabilidad de las flotas mediante soluciones inteligentes basadas en datos."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Ser el líder mundial en gestión de llantas con IA, ayudando a las empresas de transporte a ahorrar costos mientras mejoran la seguridad y la sostenibilidad."
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-fundador y CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-fundador y CTO"
+      }
+    }
+  },
+  
+  "caseStudies": {
+    "hero": {
+      "title": "Casos de Éxito",
+      "subtitle": "Descubre cómo las flotas de transporte en todo el mundo están ahorrando costos y mejorando la seguridad con Ruedata"
+    },
+    "companies": {
+      "title": "Empresas que Confían en Nosotros",
+      "description": "Conoce cómo estos líderes de la industria han transformado su gestión de llantas con Ruedata"
+    }
   }
 }

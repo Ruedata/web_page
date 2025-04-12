@@ -152,5 +152,42 @@
 
     "question8": "O que diferencia a Ruedata de outros sistemas?",
     "answer8": "Nossa solução é baseada em inteligência artificial e otimização matemática, não apenas em registros. Isso nos permite oferecer recomendações precisas que geram economia real."
+  },
+  
+  "about": {
+    "hero": {
+      "title": "Sobre Nós",
+      "subtitle": "Estamos transformando a gestão de pneus para frotas de transporte em todo o mundo"
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "A missão da Ruedata é transformar a indústria de transporte reduzindo o consumo de pneus e maximizando a rentabilidade das frotas por meio de soluções inteligentes baseadas em dados."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "description": "Ser o líder global em gestão de pneus com IA, ajudando empresas de transporte a economizar custos enquanto melhoram a segurança e a sustentabilidade."
+    },
+    "team": {
+      "title": "Nossa Equipe",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-fundador e CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-fundador e CTO"
+      }
+    }
+  },
+  
+  "caseStudies": {
+    "hero": {
+      "title": "Casos de Sucesso",
+      "subtitle": "Saiba como frotas de transporte em todo o mundo estão economizando custos e melhorando a segurança com a Ruedata"
+    },
+    "companies": {
+      "title": "Empresas que Confiam em Nós",
+      "description": "Veja como esses líderes do setor transformaram sua gestão de pneus com a Ruedata"
+    }
   }
 }

@@ -152,6 +152,43 @@
 
     "question8": "What sets Ruedata apart from other systems?",
     "answer8": "Our solution is based on AI (artificial intelligence) and mathematical optimization, not just record-keeping. This allows us to provide accurate recommendations that drive real savings."
+  },
+  
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "We're transforming tire management for transportation fleets worldwide"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Ruedata's mission is to transform the transportation industry by reducing tire consumption and maximizing fleet profitability through intelligent data-driven solutions."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the global leader in AI-powered tire management, helping transportation companies save costs while improving safety and sustainability."
+    },
+    "team": {
+      "title": "Our Team",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-founder & CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-founder & CTO"
+      }
+    }
+  },
+  
+  "caseStudies": {
+    "hero": {
+      "title": "Case Studies",
+      "subtitle": "Learn how transportation fleets worldwide are saving costs and improving safety with Ruedata"
+    },
+    "companies": {
+      "title": "Trusted by Leading Companies",
+      "description": "See how these industry leaders have transformed their tire management with Ruedata"
+    }
   }
 
 }
