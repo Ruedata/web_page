@@ -153,15 +153,17 @@
     "question8": "O que diferencia a Ruedata de outros sistemas?",
     "answer8": "Nossa solução é baseada em inteligência artificial e otimização matemática, não apenas em registros. Isso nos permite oferecer recomendações precisas que geram economia real."
   },
-  
+
   "about": {
+    "title": "Sobre nós",
+    "description": "A Ruedata une software de gestão de pneus, inteligência artificial e excelência operacional para ajudar frotas a reduzir custos e melhorar o desempenho.",
     "hero": {
       "title": "Mantemos Você Rodando",
       "description": "Ruedata é uma empresa com sede em Chattanooga moldando o futuro da mobilidade para a indústria de frete e logística",
       "contactButton": "Contate-nos"
     },
     "vision": {
-      "title": "Da Percepção ao Impacto: A Missão da Ruedata para Otimizar o Uso de Pneus",
+      "title": "Da percepção ao impacto: a missão da ruedata para otimizar o uso de pneus",
       "description": {
         "paragraph1": "A Ruedata foi fundada com uma missão clara: reduzir o consumo desnecessário de pneus e otimizar as operações de frota por meio de dados.",
         "paragraph2": "Tradicionalmente, as frotas dependiam das recomendações do fabricante em vez do desempenho no mundo real. Descobrimos que o desgaste dos pneus é influenciado por múltiplas variáveis operacionais—não apenas pela marca ou tipo. Uma observação fundamental veio de frotas de transporte urbano, onde os pneus da porta de saída se desgastavam mais rapidamente devido à distribuição do peso dos passageiros.",
@@ -181,7 +183,7 @@
       }
     }
   },
-  
+
   "caseStudies": {
     "hero": {
       "title": "Histórias Reais de Sucesso",

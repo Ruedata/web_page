@@ -153,15 +153,17 @@
     "question8": "What sets Ruedata apart from other systems?",
     "answer8": "Our solution is based on AI (artificial intelligence) and mathematical optimization, not just record-keeping. This allows us to provide accurate recommendations that drive real savings."
   },
-  
+
   "about": {
+    "title": "About Ruedata",
+    "description": "Ruedata merges tire management software, AI, and operational excellence to help fleets reduce costs and improve performance.",
     "hero": {
       "title": "We Keep You Rolling",
       "description": "Ruedata is a Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
       "contactButton": "Contact us"
     },
     "vision": {
-      "title": "From Insight to Impact: Ruedata's Mission to Optimize Tire Usage",
+      "title": "From insight to impact: ruedata's mission to optimize tire usage",
       "description": {
         "paragraph1": "Ruedata was founded with a clear mission: to reduce unnecessary tire consumption and optimize fleet operations through data.",
         "paragraph2": "Traditionally, fleets relied on manufacturer recommendations rather than real-world performance. We discovered that tire wear is influenced by multiple operational variables—not just brand or type. A key insight came from urban transit fleets, where exit-door tires wore out faster due to passenger weight distribution.",
@@ -181,7 +183,7 @@
       }
     }
   },
-  
+
   "caseStudies": {
     "hero": {
       "title": "Real Success Stories",
