@@ -12,7 +12,8 @@
     "about": "Sobre nós",
     "case-studies": "Casos de sucesso",
     "login": "Entrar",
-    "get-started": "Comece agora"
+    "get-started": "Comece agora",
+    "phone":"+55 11-96617-7721"
   },
   "hero": {
     "title": "Digitalize e otimize a gestão de pneus com IA",
@@ -82,7 +83,7 @@
     "title": "Apoiado por"
   },
   "case": {
-    "studies": "Casos de sucesso",
+    "studies": "Histórias de sucesso",
     "cemex": {
       "title": "CEMEX MÉXICO",
       "description": "Ao centralizar os dados dos pneus e otimizar a manutenção, melhoramos a eficiência operacional, aumentamos a rastreabilidade e reduzimos os custos relacionados a pneus na cadeia de suprimentos da Cemex."
@@ -158,12 +159,12 @@
     "title": "Sobre nós",
     "description": "A Ruedata une software de gestão de pneus, inteligência artificial e excelência operacional para ajudar frotas a reduzir custos e melhorar o desempenho.",
     "hero": {
-      "title": "Mantemos Você Rodando",
+      "title": "Mantemos você rodando",
       "description": "Ruedata é uma empresa com sede em Chattanooga moldando o futuro da mobilidade para a indústria de frete e logística",
       "contactButton": "Contate-nos"
     },
     "vision": {
-      "title": "Da percepção ao impacto: a missão da ruedata para otimizar o uso de pneus",
+      "title": "Da percepção ao impacto: a missão da Ruedata para otimizar o uso de pneus",
       "description": {
         "paragraph1": "A Ruedata foi fundada com uma missão clara: reduzir o consumo desnecessário de pneus e otimizar as operações de frota por meio de dados.",
         "paragraph2": "Tradicionalmente, as frotas dependiam das recomendações do fabricante em vez do desempenho no mundo real. Descobrimos que o desgaste dos pneus é influenciado por múltiplas variáveis operacionais—não apenas pela marca ou tipo. Uma observação fundamental veio de frotas de transporte urbano, onde os pneus da porta de saída se desgastavam mais rapidamente devido à distribuição do peso dos passageiros.",

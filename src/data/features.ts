@@ -1,7 +1,14 @@
+import { ArrowIcon } from "@/components/Icons/arrowIcon";
+import { EyeIcon } from "@/components/Icons/eyeIcon";
+import { PowerBiIcon } from "@/components/Icons/PowerBi";
+import { RotateTopIcon } from "@/components/Icons/rotateTopIcon";
+import { TrashIcon } from "@/components/Icons/TrashIcon";
+
 export const features = [
   {
     title: 'features.title1',
     subtitle: 'features.p1',
+    height: 'h-[300px] sm:h-[600px]',
     ul: [
       'features.inspectionUnderOneMinute',
       'features.noManualEntry',
@@ -9,11 +16,17 @@ export const features = [
       'features.workOfflineMode',
       'features.smartErrorsAlert',
     ],
-    image: '/images/young-worker.jpg',
+    image: '/images/home/group1.png',
+    objectCover: true,
+    Icons: [],
+    centerContent: true,
   },
   {
     title: 'features.title2',
     subtitle: 'features.p2',
+    height: 'h-[300px] sm:h-[600px]',
+    centerContent: true,
+    icons: [],
     ul: [
       'features.compliance',
       'features.prevent',
@@ -26,6 +39,8 @@ export const features = [
   {
     title: 'features.title3',
     subtitle: 'features.p3',
+    height: 'h-[300px] sm:h-[600px]',
+    centerContent: true,
     ul: [
       'features.fulloperation',
       'features.realtime',
@@ -33,36 +48,52 @@ export const features = [
       'features.powerBi',
       'features.monitorTireDisposal',
     ],
-    image: '/images/tablet1.jpg',
+    Icons: [
+      ArrowIcon,
+      EyeIcon,
+      PowerBiIcon,
+      RotateTopIcon,
+      TrashIcon,
+    ],
+    image: '/images/home/group2.svg',
   },
   {
     title: 'features.title4',
     subtitle: 'features.p4',
+    height: 'h-[300px] sm:h-[600px]',
+    centerContent: true,
     ul: [
       'features.aiBased',
       'features.automated',
       'features.detechMechanicalFailures',
       'features.trackWorstPerformance',
     ],
-    image: '/images/tablet2.jpg',
+    Icons: [],
+    image: '/images/home/group2.svg',
   },
   {
     title: 'features.title5',
     subtitle: 'features.p5',
+    height: 'h-[300px] sm:h-[600px]',
+    centerContent: true,
     ul: [
       'features.LowerCostMilage',
       'features.increaseLifeSpam',
       'features.retreadingRates',
       'features.extendLife',
     ],
-    image: '/images/tablet3.jpg',
+    Icons: [],
+    image: '/images/home/group3.svg',
   },
   {
     title: 'features.title6',
     subtitle: 'features.p6',
+    height: 'h-[300px] sm:h-[600px]',
+    centerContent: true,
     ul: [],
     image: '/images/manager.jpg',
     button: true,
+    Icons: [],
     link: '/demo/',
   },
 ];

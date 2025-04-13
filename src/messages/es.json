@@ -12,7 +12,8 @@
     "about": "Sobre nosotros",
     "case-studies": "Casos de éxito",
     "login": "Iniciar sesión",
-    "get-started": "Comenzar"
+    "get-started": "Comenzar",
+    "phone": "+52 55-5895-7246"
   },
   "hero": {
     "title": "Digitaliza y optimiza la gestión de llantas con IA",
@@ -82,7 +83,7 @@
     "title": "Respaldado por"
   },
   "case": {
-    "studies": "Casos de éxito",
+    "studies": "Historisas de éxito",
     "cemex": {
       "title": "CEMEX MÉXICO",
       "description": "Centralizando los datos de llantas y optimizando el mantenimiento, mejoramos la eficiencia operativa, aumentamos la trazabilidad y reducimos los costos relacionados con llantas en la cadena de suministro de Cemex."
@@ -157,12 +158,12 @@
     "title": "Acerca de Ruedata",
     "description": "Ruedata combina un software de gestión de llantas, inteligencia artificial y excelencia operativa para ayudar a las flotas a reducir costos y mejorar su rendimiento.",
     "hero": {
-      "title": "Te Mantenemos Rodando",
+      "title": "Te mantenemos rodando",
       "description": "Ruedata es una empresa con sede en Chattanooga que está dando forma al futuro de la movilidad para la industria de carga y logística",
       "contactButton": "Contáctanos"
     },
     "vision": {
-      "title": "De la percepción al impacto: la misión de ruedata para optimizar el uso de llantas",
+      "title": "De la percepción al impacto: la misión de Ruedata para optimizar el uso de llantas",
       "description": {
         "paragraph1": "Ruedata fue fundada con una misión clara: reducir el consumo innecesario de llantas y optimizar las operaciones de flota a través de datos.",
         "paragraph2": "Tradicionalmente, las flotas dependían de las recomendaciones del fabricante en lugar del rendimiento en el mundo real. Descubrimos que el desgaste de las llantas está influenciado por múltiples variables operativas, no solo por la marca o el tipo. Una observación clave provino de las flotas de tránsito urbano, donde las llantas de la puerta de salida se desgastaban más rápido debido a la distribución del peso de los pasajeros.",

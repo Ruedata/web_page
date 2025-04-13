@@ -25,14 +25,12 @@ export function AboutPage() {
               {t("about.hero.description")}
             </p>
             <div>
-              <Link href="/contact/">
-                <Button className="bg-primary hover:bg-primary-dark text-white">
-                  {t("about.hero.contactButton")}
-                </Button>
+              <Link href="/demo/">
+                <Button className="bg-primary text-white mb-8 lg:mb-8">{t("nav.get-started")}</Button>
               </Link>
             </div>
           </div>
-          <div className="relative h-[300px] sm:h-[400px] lg:h-full">
+          <div className="relative h-[400px]">
             <Image
               src="/images/home/jefe.jpg"
               alt="Ruedata team"
@@ -56,7 +54,7 @@ export function AboutPage() {
                 src="/images/truck-drives-fast-highway-bright-sun-with-sunbeams-blue-sky (1).jpg"
                 alt="Our vision"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover rounded-2xl"
               />
             </div>
             <div className="z-10">

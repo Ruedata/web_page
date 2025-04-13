@@ -152,32 +152,36 @@ export function HomePage() {
             image={item.image}
             button={item.button}
             link={item.link}
+            height={item.height}
+            objectCover={item.objectCover}
+            centerContent={item.centerContent}
+            Icons={item.Icons as React.FC<{ className?: string }>[]}
           />
         ))}
       </section>
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
         <div>
-          <h2 className="text-2xl text-center lg:text-4xl font-bold text-navy-blue mb-4 lg:mb-8">{t('partners.title')}</h2>
+          <h2 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue  mb-4 lg:mb-18">
+            {t('partners.title')}
+          </h2>
         </div>
         <LogoPartners
           images={partnersImages}
         />
       </section>
 
-      <section className="w-full py-12 md:py-16 bg-gray-200">
+      <section className="w-full py-12 md:py-16">
         <div className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
-          <div>
-            <h2 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-8">{t('case.studies')}</h2>
-          </div>
+          <h2 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue  mb-4 lg:mb-18">
+            {t('case.studies')}
+          </h2>
         <Carousel items={carouselItems} autoPlay={false} />
         </div>
       </section>
 
       <section className="container px-4 w-full md:py-8 sm:py-4 mx-auto mt-4">
-        <div>
-          <h3 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-8">{t('backedBy.title')}</h3>
-        </div>
+        <h3 className="text-2xl text-center sm:text-4xl text-2xl sm:text-4xl md:text-5xl font-bold text-navy-blue mb-4 lg:mb-18">{t('backedBy.title')}</h3>
         <LogoPartners
           images={backedByImages}
         />

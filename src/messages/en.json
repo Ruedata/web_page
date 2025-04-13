@@ -12,7 +12,8 @@
     "about": "About us",
     "case-studies": "Case Studies",
     "login": "Login",
-    "get-started": "Get Started"
+    "get-started": "Get Started",
+    "phone": "+1 334-373-2288"
   },
   "hero": {
     "title": "Digitalize and optimize tire management with AI",
@@ -82,7 +83,7 @@
     "title": "Backed by"
   },
   "case": {
-    "studies": "Case Studies",
+    "studies": "Success stories",
     "cemex": {
       "title": "CEMEX MEXICO",
       "description": "By centralizing tire data and optimizing maintenance, we’ve improved operational efficiency, enhanced traceability, and reduced tire-related costs across Cemex’s supply chain."
@@ -158,12 +159,12 @@
     "title": "About Ruedata",
     "description": "Ruedata merges tire management software, AI, and operational excellence to help fleets reduce costs and improve performance.",
     "hero": {
-      "title": "We Keep You Rolling",
+      "title": "We keep you rolling",
       "description": "Ruedata is a Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
       "contactButton": "Contact us"
     },
     "vision": {
-      "title": "From insight to impact: ruedata's mission to optimize tire usage",
+      "title": "From insight to impact: Ruedata's mission to optimize tire usage",
       "description": {
         "paragraph1": "Ruedata was founded with a clear mission: to reduce unnecessary tire consumption and optimize fleet operations through data.",
         "paragraph2": "Traditionally, fleets relied on manufacturer recommendations rather than real-world performance. We discovered that tire wear is influenced by multiple operational variables—not just brand or type. A key insight came from urban transit fleets, where exit-door tires wore out faster due to passenger weight distribution.",
@@ -192,11 +193,23 @@
     "requestDemo": "Request a Demo",
     "construction": {
       "title": "Construction Company",
-      "description": "A major construction company with over 200 vehicles achieved significant cost savings and improved operational efficiency by implementing Ruedata's tire management solution."
+      "description": "A leading construction company faced increasing pressure to optimize fleet operations and reduce tire-related expenses. this is what Ruedata can do:",
+      "bulletTitle1": "Fleet size:",
+      "bulletTitle2": "Estimated yearly tire cost:",
+      "bulletTitle3": "Potential savings:",
+      "bullet1": "15K trucks",
+      "bullet2": "$39M",
+      "bullet3": "$1.2M"
     },
     "dairy": {
       "title": "Dairy Products Company",
-      "description": "This dairy company operates a fleet of refrigerated trucks across multiple states. With Ruedata, they were able to reduce tire-related roadside incidents by 40% and extend tire life significantly."
+      "description": "This dairy company operates a fleet of refrigerated trucks across multiple states. With Ruedata, they were able to reduce tire-related roadside incidents by 40% and extend tire life significantly.",
+      "bulletTitle1": "Fleet size:",
+      "bulletTitle2": "Estimated yearly tire cost:",
+      "bulletTitle3": "Potential savings:",
+      "bullet1": "1.5K trucks",
+      "bullet2": "$4M",
+      "bullet3": "$800K"
     },
     "metrics": {
       "savings": "Cost Savings",
