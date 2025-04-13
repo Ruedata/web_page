@@ -12,7 +12,8 @@
     "about": "Sobre nosotros",
     "case-studies": "Casos de éxito",
     "login": "Iniciar sesión",
-    "get-started": "Comenzar"
+    "get-started": "Comenzar",
+    "phone": "+52 55-5895-7246"
   },
   "hero": {
     "title": "Digitaliza y optimiza la gestión de llantas con IA",
@@ -82,7 +83,7 @@
     "title": "Respaldado por"
   },
   "case": {
-    "studies": "Casos de éxito",
+    "studies": "Historisas de éxito",
     "cemex": {
       "title": "CEMEX MÉXICO",
       "description": "Centralizando los datos de llantas y optimizando el mantenimiento, mejoramos la eficiencia operativa, aumentamos la trazabilidad y reducimos los costos relacionados con llantas en la cadena de suministro de Cemex."
@@ -151,5 +152,71 @@
 
     "question8": "¿Qué diferencia a Ruedata de otros sistemas?",
     "answer8": "Nuestra solución está basada en inteligencia artificial y optimización matemática, no solo en registros. Esto nos permite ofrecer recomendaciones precisas que generan ahorros reales."
+  },
+
+  "about": {
+    "title": "Acerca de Ruedata",
+    "description": "Ruedata combina un software de gestión de llantas, inteligencia artificial y excelencia operativa para ayudar a las flotas a reducir costos y mejorar su rendimiento.",
+    "hero": {
+      "title": "Te mantenemos rodando",
+      "description": "Ruedata es una empresa con sede en Chattanooga que está dando forma al futuro de la movilidad para la industria de carga y logística",
+      "contactButton": "Contáctanos"
+    },
+    "vision": {
+      "title": "De la percepción al impacto: la misión de Ruedata para optimizar el uso de llantas",
+      "description": {
+        "paragraph1": "Ruedata fue fundada con una misión clara: reducir el consumo innecesario de llantas y optimizar las operaciones de flota a través de datos.",
+        "paragraph2": "Tradicionalmente, las flotas dependían de las recomendaciones del fabricante en lugar del rendimiento en el mundo real. Descubrimos que el desgaste de las llantas está influenciado por múltiples variables operativas, no solo por la marca o el tipo. Una observación clave provino de las flotas de tránsito urbano, donde las llantas de la puerta de salida se desgastaban más rápido debido a la distribución del peso de los pasajeros.",
+        "paragraph3": "Esto nos llevó a construir una plataforma impulsada por IA que ayuda a las flotas a tomar decisiones más inteligentes, maximizar la vida útil de las llantas, reducir costos y mejorar la seguridad vial. Hoy, Ruedata se asocia con líderes globales como Heineken, DHL, Bimbo, Cemex y embotelladores de Coca-Cola, brindando ahorros y sostenibilidad medibles."
+      }
+    },
+    "team": {
+      "title": "Conoce a Nuestro Equipo",
+      "description": "Nuestro equipo reúne experiencia en inteligencia artificial, transporte y optimización de negocios para ofrecer un valor excepcional a nuestros clientes.",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-fundador y CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-fundador y CTO"
+      }
+    }
+  },
+
+  "caseStudies": {
+    "hero": {
+      "title": "Historias Reales de Éxito",
+      "subtitle": "Ahorro y Seguridad para Flotas de Transporte"
+    },
+    "requestDemo": "Solicitar una Demo",
+    "construction": {
+      "title": "Empresa de Construcción",
+      "description": "Una importante empresa de construcción con más de 200 vehículos logró ahorros significativos de costos y mejoró la eficiencia operativa al implementar la solución de gestión de llantas de Ruedata."
+    },
+    "dairy": {
+      "title": "Empresa de Productos Lácteos",
+      "description": "Esta empresa láctea opera una flota de camiones refrigerados en varios estados. Con Ruedata, pudieron reducir los incidentes en carretera relacionados con llantas en un 40% y extender significativamente la vida útil de las llantas."
+    },
+    "metrics": {
+      "savings": "Ahorro de Costos",
+      "roi": "Retorno de Inversión"
+    },
+    "additional": {
+      "title": "Más Casos de Éxito",
+      "description": "Descubre cómo empresas de diversas industrias se han beneficiado de nuestra solución de gestión de llantas",
+      "case1": {
+        "title": "Proveedor de Logística",
+        "description": "Empresa nacional de logística con más de 500 camiones"
+      },
+      "case2": {
+        "title": "Distribuidor de Bebidas",
+        "description": "Distribuidor regional con 150 vehículos de reparto"
+      },
+      "case3": {
+        "title": "Gestión de Residuos",
+        "description": "Flota urbana de gestión de residuos con 80 vehículos pesados"
+      }
+    }
   }
 }

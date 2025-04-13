@@ -38,15 +38,15 @@ export default function Footer() {
               </li>
             </ul>
           </div> */}
-          {/* <div>
+          <div>
             <h3 className="mb-4 text-lg font-medium">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white">
+                <Link href="/about/" className="text-gray-300 hover:text-white">
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/case-studies" className="text-gray-300 hover:text-white">
                   Case Studies
                 </Link>
@@ -55,13 +55,13 @@ export default function Footer() {
                 <Link href="/contact" className="text-gray-300 hover:text-white">
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
-          </div> */}
+          </div>
           <div>
             <h3 className="mb-4 text-lg font-medium">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li className="text-gray-300">+1 334-373-2288</li>
+              <li className="text-gray-300">{t('nav.phone')}</li>
               <li className="text-gray-300">hello@ruedata.com</li>
             </ul>
           </div>

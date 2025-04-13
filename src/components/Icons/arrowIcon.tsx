@@ -1,0 +1,9 @@
+interface Props {
+  className?: string;
+}
+export const ArrowIcon = ({ className }: Props) => (
+  <svg width="32" className={className} height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect y="0.526123" width="32" height="32" rx="16" fill="#0091EA"/>
+    <path d="M11.5017 15.1761L19.275 11.4748C20.4084 10.9348 21.591 12.1181 21.0517 13.2521L17.3504 21.0248C16.8444 22.0868 15.311 22.0215 14.8977 20.9195L14.2137 19.0935C14.1469 18.9153 14.0427 18.7536 13.9081 18.619C13.7736 18.4845 13.6118 18.3803 13.4337 18.3135L11.607 17.6288C10.5057 17.2155 10.4397 15.6821 11.5017 15.1761Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);

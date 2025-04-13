@@ -16,18 +16,27 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white px-4">
+      <div className="container mx-auto flex h-8 justify-end items-center">
+        <div className="flex gap-2">
+          <Phone className="h-4 w-4 text-navy-blue" />
+          <span className="text-sm text-navy-blue">{t('nav.phone')}</span>
+        </div>
+      </div>
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.svg" alt="Ruedata Logo" width={150} height={40} className="h-10 w-auto" />
           </Link>
         </div>
-
         <div className="hidden md:flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <Phone className="h-4 w-4 text-navy-blue" />
-            <span className="text-sm text-navy-blue">+1 334-373-2288</span>
-          </div>
+          <nav className="hidden md:flex items-center gap-4 mr-4">
+            <Link href="/about/" className="text-navy-blue hover:text-primary/90 font-medium">
+              {t("nav.about")}
+            </Link>
+            {/* <Link href="/case-studies/" className="text-navy-blue hover:text-primary/90 font-medium">
+              {t("nav.case-studies")}
+            </Link> */}
+          </nav>
 
           <LanguageSwitcher locale={locale} />
 
@@ -67,13 +76,13 @@ const Header = () => {
           <nav className="flex flex-col space-y-4">
             {/* <Link href="/solutions" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.solutions")}
-            </Link>
-            <Link href="/about" className="text-navy-blue hover:text-blue-700 font-medium">
+            </Link> */}
+            <Link href="/about/" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.about")}
             </Link>
-            <Link href="/case-studies" className="text-navy-blue hover:text-blue-700 font-medium">
+            <Link href="/case-studies/" className="text-navy-blue hover:text-blue-700 font-medium">
               {t("nav.case-studies")}
-            </Link> */}
+            </Link>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-navy-blue" />
               <span className="text-sm text-navy-blue">+1 334-373-2288</span>

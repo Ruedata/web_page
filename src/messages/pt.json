@@ -12,7 +12,8 @@
     "about": "Sobre nós",
     "case-studies": "Casos de sucesso",
     "login": "Entrar",
-    "get-started": "Comece agora"
+    "get-started": "Comece agora",
+    "phone":"+55 11-96617-7721"
   },
   "hero": {
     "title": "Digitalize e otimize a gestão de pneus com IA",
@@ -82,7 +83,7 @@
     "title": "Apoiado por"
   },
   "case": {
-    "studies": "Casos de sucesso",
+    "studies": "Histórias de sucesso",
     "cemex": {
       "title": "CEMEX MÉXICO",
       "description": "Ao centralizar os dados dos pneus e otimizar a manutenção, melhoramos a eficiência operacional, aumentamos a rastreabilidade e reduzimos os custos relacionados a pneus na cadeia de suprimentos da Cemex."
@@ -152,5 +153,71 @@
 
     "question8": "O que diferencia a Ruedata de outros sistemas?",
     "answer8": "Nossa solução é baseada em inteligência artificial e otimização matemática, não apenas em registros. Isso nos permite oferecer recomendações precisas que geram economia real."
+  },
+
+  "about": {
+    "title": "Sobre nós",
+    "description": "A Ruedata une software de gestão de pneus, inteligência artificial e excelência operacional para ajudar frotas a reduzir custos e melhorar o desempenho.",
+    "hero": {
+      "title": "Mantemos você rodando",
+      "description": "Ruedata é uma empresa com sede em Chattanooga moldando o futuro da mobilidade para a indústria de frete e logística",
+      "contactButton": "Contate-nos"
+    },
+    "vision": {
+      "title": "Da percepção ao impacto: a missão da Ruedata para otimizar o uso de pneus",
+      "description": {
+        "paragraph1": "A Ruedata foi fundada com uma missão clara: reduzir o consumo desnecessário de pneus e otimizar as operações de frota por meio de dados.",
+        "paragraph2": "Tradicionalmente, as frotas dependiam das recomendações do fabricante em vez do desempenho no mundo real. Descobrimos que o desgaste dos pneus é influenciado por múltiplas variáveis operacionais—não apenas pela marca ou tipo. Uma observação fundamental veio de frotas de transporte urbano, onde os pneus da porta de saída se desgastavam mais rapidamente devido à distribuição do peso dos passageiros.",
+        "paragraph3": "Isso nos levou a construir uma plataforma baseada em IA que ajuda as frotas a tomar decisões mais inteligentes, maximizar a vida útil dos pneus, reduzir custos e melhorar a segurança nas estradas. Hoje, a Ruedata faz parceria com líderes globais como Heineken, DHL, Bimbo, Cemex e engarrafadores da Coca-Cola, proporcionando economias mensuráveis e sustentabilidade."
+      }
+    },
+    "team": {
+      "title": "Conheça Nossa Equipe",
+      "description": "Nossa equipe reúne expertise em inteligência artificial, transporte e otimização de negócios para oferecer valor excepcional aos nossos clientes.",
+      "sebastian": {
+        "name": "Sebastian Baquero",
+        "position": "Co-fundador e CEO"
+      },
+      "jorge": {
+        "name": "Jorge Quinche",
+        "position": "Co-fundador e CTO"
+      }
+    }
+  },
+
+  "caseStudies": {
+    "hero": {
+      "title": "Histórias Reais de Sucesso",
+      "subtitle": "Economia e Segurança para Frotas de Transporte"
+    },
+    "requestDemo": "Solicitar uma Demonstração",
+    "construction": {
+      "title": "Empresa de Construção",
+      "description": "Uma grande empresa de construção com mais de 200 veículos alcançou economias significativas de custos e melhorou a eficiência operacional ao implementar a solução de gestão de pneus da Ruedata."
+    },
+    "dairy": {
+      "title": "Empresa de Laticínios",
+      "description": "Esta empresa de laticínios opera uma frota de caminhões refrigerados em vários estados. Com a Ruedata, eles conseguiram reduzir os incidentes rodoviários relacionados a pneus em 40% e estender significativamente a vida útil dos pneus."
+    },
+    "metrics": {
+      "savings": "Economia de Custos",
+      "roi": "Retorno sobre Investimento"
+    },
+    "additional": {
+      "title": "Mais Casos de Sucesso",
+      "description": "Veja como empresas de diversos setores se beneficiaram da nossa solução de gestão de pneus",
+      "case1": {
+        "title": "Provedor de Logística",
+        "description": "Empresa nacional de logística com mais de 500 caminhões"
+      },
+      "case2": {
+        "title": "Distribuidor de Bebidas",
+        "description": "Distribuidor regional com 150 veículos de entrega"
+      },
+      "case3": {
+        "title": "Gestão de Resíduos",
+        "description": "Frota urbana de gestão de resíduos com 80 veículos pesados"
+      }
+    }
   }
 }
