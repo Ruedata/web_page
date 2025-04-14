@@ -163,6 +163,10 @@
       "description": "Ruedata é uma empresa com sede em Chattanooga moldando o futuro da mobilidade para a indústria de frete e logística",
       "contactButton": "Contate-nos"
     },
+    "office": {
+        "title": "Nosso escritório",
+        "description": "Society Of Work 110 Somerville Ave Chattanooga, TN 37405"
+    },
     "vision": {
       "title": "Da percepção ao impacto: a missão da Ruedata para otimizar o uso de pneus",
       "description": {

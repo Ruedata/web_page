@@ -16,7 +16,7 @@ export const features = [
       'features.workOfflineMode',
       'features.smartErrorsAlert',
     ],
-    image: '/images/home/group1.png',
+    image: '/images/home/group1.svg',
     objectCover: true,
     Icons: [],
     centerContent: true,

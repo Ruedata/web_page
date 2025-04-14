@@ -163,6 +163,10 @@
       "description": "Ruedata is a Chattanooga-based company shaping the future of mobility for the freight and logistics industry",
       "contactButton": "Contact us"
     },
+    "office": {
+      "title": "Our Office",
+      "description": "Society Of Work 110 Somerville Ave Chattanooga, TN 37405"
+    },
     "vision": {
       "title": "From insight to impact: Ruedata's mission to optimize tire usage",
       "description": {
