@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
 import { toast } from '@/components/ui/use-toast';
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import { uploadImage } from '@/utils/imageUpload';
 import Image from 'next/image';
 import { db } from '@/lib/firebase-client';
@@ -21,7 +21,7 @@ interface BlogPostFormProps {
 }
 
 export default function BlogPostForm({ slug, locale }: BlogPostFormProps) {
-  const t = useTranslations();
+  // const t = useTranslations(); // Uncomment when translations are needed
   const router = useRouter();
   
   const [isSubmitting, setIsSubmitting] = useState(false);

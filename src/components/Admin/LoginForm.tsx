@@ -1,70 +1,26 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { useAuth } from '@/contexts/AuthContext';
-import { useTranslations } from 'next-intl';
-import { toast } from '@/components/ui/use-toast';
-import Cookies from 'js-cookie';
+// import { useTranslations } from 'next-intl';
+import { useLoginForm } from '@/hooks/useLoginForm';
 
 const isDevelopmentMode = process.env.NODE_ENV === 'development' && 
   (process.env.NEXT_PUBLIC_FIREBASE_API_KEY === 'AIzaSyDummyKeyForDevelopment123456');
 
 export default function LoginForm() {
-  const t = useTranslations();
-  const { login, currentUser } = useAuth();
-  const router = useRouter();
-  
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-  
-  useEffect(() => {
-    if (currentUser) {
-      Cookies.set('admin_session', 'true', { 
-        expires: 1,  // 1 day
-        path: '/' 
-      });
-      router.push('./');
-    }
-  }, [currentUser, router]);
-  
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
-    setIsLoading(true);
-    
-    try {
-      await login(email, password);
-      
-      Cookies.set('admin_session', 'true', { 
-        expires: 1,  // 1 day
-        path: '/' 
-      });
-      
-      toast({
-        title: 'Success',
-        description: 'You are now logged in',
-      });
-      
-      router.push('./');
-    } catch (error) {
-      console.error('Login error:', error);
-      setError('Invalid email or password');
-      toast({
-        title: 'Error',
-        description: 'Failed to login. Please check your credentials.',
-        variant: 'destructive',
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  // const t = useTranslations(); // Uncomment when translations are needed
+  const {
+    email,
+    setEmail,
+    password,
+    setPassword,
+    isLoading,
+    error,
+    handleSubmit
+  } = useLoginForm();
   
   return (
     <Card className="w-full max-w-md mx-auto shadow-lg">
