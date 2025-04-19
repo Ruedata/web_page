@@ -139,7 +139,7 @@ export function useBlogPostForm(initialSlug?: string, initialLocale: string = 'e
             title: 'Success',
             description: isEdit ? 'Blog post updated successfully' : 'Blog post created successfully',
           });
-          router.push('../../');
+          window.location.href = '../../';
         }, 500);
         return;
       }
