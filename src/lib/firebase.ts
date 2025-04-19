@@ -45,6 +45,9 @@ export interface BlogPost {
   image: string;
   content: string;
   description: string;
+  slug: string;
+  locale: string;
+  updatedAt?: string;
 }
 
 export async function getBlogPostBySlug(slug: string, locale: string): Promise<BlogPost | null> {
