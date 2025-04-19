@@ -129,7 +129,7 @@ export default function BlogPostForm({ slug, locale }: BlogPostFormProps) {
         description: isEdit ? 'Blog post updated successfully' : 'Blog post created successfully',
       });
       
-      router.push('../rue-admin');
+      router.push('../../');
     } catch (error) {
       console.error('Error saving blog post:', error);
       toast({
@@ -237,7 +237,7 @@ export default function BlogPostForm({ slug, locale }: BlogPostFormProps) {
             <Button
               type="button"
               variant="outline"
-              onClick={() => router.push('../rue-admin')}
+              onClick={() => router.push('../../')}
             >
               Cancel
             </Button>
