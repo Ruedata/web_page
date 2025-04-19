@@ -112,7 +112,10 @@ export default function BlogPostsList({ locale }: { locale: string }) {
                         variant="outline" 
                         size="sm"
                         className="flex items-center gap-1 text-red-600 hover:text-red-800 hover:bg-red-50"
-                        onClick={() => handleDeletePost(post.id)}
+                        onClick={() => {
+                          console.log('Delete button clicked for post ID:', post.id);
+                          handleDeletePost(post.id);
+                        }}
                       >
                         <Trash2 size={14} />
                         Delete

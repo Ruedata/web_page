@@ -1,10 +1,12 @@
 import { AuthProvider } from '@/contexts/AuthContext';
 import BlogPostsList from '@/components/Admin/BlogPostsList';
 
-export default function AdminDashboardPage({ params }: { params: { locale: string } }) {
+export default async function AdminDashboardPage({ params }: { params: { locale: string } }) {
+  const locale = params.locale || 'en';
+  
   return (
     <AuthProvider>
-      <BlogPostsList locale={params.locale} />
+      <BlogPostsList locale={locale} />
     </AuthProvider>
   );
 }

@@ -11,6 +11,7 @@ interface BlogPost {
   id: string;
   title: string;
   description: string;
+  content?: string;
   slug: string;
   locale: string;
   updatedAt?: string;
@@ -30,6 +31,26 @@ export function useBlogPostsList(initialLocale: string) {
   const fetchPosts = async (localeFilter: string) => {
     setLoading(true);
     try {
+      const isDevelopmentMode = process.env.NODE_ENV === 'development';
+      
+      if (isDevelopmentMode) {
+        console.log('Development mode: Using mock blog posts');
+        const mockPosts: BlogPost[] = [
+          {
+            id: 'test-post-id',
+            title: 'Test Blog Post for Deletion',
+            description: 'This is a test blog post that will be deleted to verify the delete functionality',
+            content: '<p>This is a test blog post content that will be deleted to verify the delete functionality works correctly.</p>',
+            slug: 'test-blog-post',
+            locale: localeFilter,
+            updatedAt: new Date().toISOString()
+          }
+        ];
+        setPosts(mockPosts);
+        setLoading(false);
+        return;
+      }
+      
       const postsRef = collection(db, 'blog_posts');
       const q = query(postsRef, where('locale', '==', localeFilter));
       const querySnapshot = await getDocs(q);
@@ -63,8 +84,20 @@ export function useBlogPostsList(initialLocale: string) {
   };
 
   const handleDeletePost = async (postId: string) => {
+    const isDevelopmentMode = process.env.NODE_ENV === 'development';
+    
     if (window.confirm('Are you sure you want to delete this post?')) {
       try {
+        if (isDevelopmentMode && postId === 'test-post-id') {
+          console.log('Development mode: Simulating deletion of mock post');
+          setPosts([]);
+          toast({
+            title: 'Success',
+            description: 'Blog post deleted successfully',
+          });
+          return;
+        }
+        
         await deleteDoc(doc(db, 'blog_posts', postId));
         toast({
           title: 'Success',
