@@ -28,7 +28,7 @@ export default function BlogPostsList({ locale }: { locale: string }) {
             <LogOut size={16} />
             Logout
           </Button>
-          <Link href="./rue-admin/new">
+          <Link href="./new">
             <Button className="flex items-center gap-2">
               <Plus size={16} />
               New Post
@@ -65,7 +65,7 @@ export default function BlogPostsList({ locale }: { locale: string }) {
       ) : posts.length === 0 ? (
         <div className="text-center py-10 bg-gray-50 rounded-lg">
           <p className="text-gray-500">No blog posts found for this language.</p>
-          <Link href="./rue-admin/new">
+          <Link href="./new">
             <Button className="mt-4">Create your first post</Button>
           </Link>
         </div>
@@ -102,7 +102,7 @@ export default function BlogPostsList({ locale }: { locale: string }) {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <div className="flex justify-end space-x-2">
-                      <Link href={`./rue-admin/edit/${post.slug}`}>
+                      <Link href={`./edit/${post.slug}`}>
                         <Button variant="outline" size="sm" className="flex items-center gap-1">
                           <Pencil size={14} />
                           Edit

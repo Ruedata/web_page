@@ -21,7 +21,7 @@ export function useLoginForm() {
         expires: 1,  // 1 day
         path: '/' 
       });
-      router.push('./');
+      router.push('../');
     }
   }, [currentUser, router]);
   
@@ -43,7 +43,7 @@ export function useLoginForm() {
         description: 'You are now logged in',
       });
       
-      router.push('./');
+      router.push('../');
     } catch (error) {
       console.error('Login error:', error);
       setError('Invalid email or password');
